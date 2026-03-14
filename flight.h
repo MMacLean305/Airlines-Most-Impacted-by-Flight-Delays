@@ -13,32 +13,14 @@ class Flight{
         std::string departure_time_label;
         float departure_delay;
     public:
-        std::string get_flight_delay(){
-            return this->flight_delay;
-        }
-        int get_day_of_week(){
-            return this->day_of_week;
-        }
-        std::string get_airline(){
-            return this->airline;
-        }
-        bool get_cancelled(){
-            return this->cancelled;
-        }
-        bool get_diverted(){
-            return this->diverted;
-        }
-        std::string get_departure_airport(){
-            return this->departure_airport;
-        }
-        std::string get_departure_city_name(){
-            return this->departure_city_name;
-        }
-        std::string get_departure_time_label(){
-            return this->departure_time_label;
-        }
-        float get_departure_delay(){
-            return departure_delay;
-        }
-    
+        //Getter functions
+        std::string get_flight_delay();
+        int get_day_of_week();
+        std::string get_airline();
+        bool get_cancelled();
+        bool get_diverted();
+        std::string get_departure_airport();
+        std::string get_departure_city_name();
+        std::string get_departure_time_label();
+        float get_departure_delay();
 };
