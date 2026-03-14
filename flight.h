@@ -22,4 +22,23 @@ class Flight{
         std::string get_airline(){
             return this->airline;
         }
+        bool get_cancelled(){
+            return this->cancelled;
+        }
+        bool get_diverted(){
+            return this->diverted;
+        }
+        std::string get_departure_airport(){
+            return this->departure_airport;
+        }
+        std::string get_departure_city_name(){
+            return this->departure_city_name;
+        }
+        std::string get_departure_time_label(){
+            return this->departure_time_label;
+        }
+        float get_departure_delay(){
+            return departure_delay;
+        }
+    
 };
