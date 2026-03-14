@@ -29,3 +29,7 @@ string Flight::get_departure_time_label(){
 float Flight::get_departure_delay(){
     return departure_delay;
 }
+
+void Flight::print_all_data(){
+    cout << "Placeholder" << endl; //placeholder   
+}

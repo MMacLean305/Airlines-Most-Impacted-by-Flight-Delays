@@ -21,6 +21,9 @@ int main(){
     //Console loop
     string raw_command;
     while(true){
+        string command = "";
+        int num_args = 0;
+        
         cout << "Please enter a command (/h for help):" << endl;
         getline(cin, raw_command);
 

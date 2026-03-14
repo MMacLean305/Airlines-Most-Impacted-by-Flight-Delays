@@ -23,4 +23,6 @@ class Flight{
         std::string get_departure_city_name();
         std::string get_departure_time_label();
         float get_departure_delay();
+
+        void print_all_data();
 };
