@@ -2,6 +2,12 @@
 #include <fstream>
 using namespace std;
 
-void scrape_data(const std::string& filename){
-    cout<<"temp"; //temp
+vector<Flight> scrape_data(const std::string& filename){
+    ifstream file(filename);
+    vector<Flight> flights {};
+    string line;
+    getline(file, line);
+    while(getline(file, line)){
+        
+    }
 }

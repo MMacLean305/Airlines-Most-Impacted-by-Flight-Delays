@@ -1,4 +1,7 @@
+#pragma once
 #include <iostream>
+#include <vector>
+#include "flight.h"
 #include <string>
 
-void scrape_data(const std::string& filename);
+std::vector<Flight> scrape_data(const std::string& filename);

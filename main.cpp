@@ -1,8 +1,18 @@
+#pragma once
 #include <iostream>
 #include "flight.h"
 #include "fileio.h"
+#include <vector>
 using namespace std;
 int main(){
+    //unsorted vector of flights
+    vector<Flight> flights {};
+
+    //File io
+
+
+
+
     //Call the heap sort and quick sort
 
     double heap_execution = 0.0; //temp value
