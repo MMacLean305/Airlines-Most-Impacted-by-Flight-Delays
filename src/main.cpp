@@ -2,6 +2,8 @@
 #include <iostream>
 #include "flight.h"
 #include "fileio.h"
+#include "quicksort.h"
+#include "heapsort.h"
 #include <vector>
 using namespace std;
 int main(){
@@ -19,6 +21,10 @@ int main(){
     int heap_num_swaps = 0; //temp value
     double quick_execution = 0.0; //temp value
     int quick_num_swaps = 0; //temp value
+
+    vector<Flight> heapSortedData = heapSort(flights, heap_num_swaps);
+    vector<Flight> quickSortedData = quickSort(flights, quick_num_swaps);
+
 
     cout << "Heap Sort:" << endl;
     cout << '\t' << "Execution time: " << heap_execution << endl;
