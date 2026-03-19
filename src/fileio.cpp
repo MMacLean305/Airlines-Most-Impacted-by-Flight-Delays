@@ -87,4 +87,5 @@ vector<Flight> scrape_data(const std::string& filename){
             aircraft_age);
         flights.push_back(curr_flight);
     }
+    return flights;
 }
