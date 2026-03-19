@@ -7,11 +7,8 @@
 #include <vector>
 using namespace std;
 int main(){
-    //unsorted vector of flights
-    vector<Flight> flights {};
-
     //File io
-
+    vector<Flight> unsorted_flights = scrape_data("US_flights_2023.csv");
 
 
 
@@ -22,8 +19,8 @@ int main(){
     double quick_execution = 0.0; //temp value
     int quick_num_swaps = 0; //temp value
 
-    vector<Flight> heapSortedData = heapSort(flights, heap_num_swaps);
-    vector<Flight> quickSortedData = quickSort(flights, quick_num_swaps);
+    vector<Flight> heapSortedData = heapSort(unsorted_flights, heap_num_swaps);
+    vector<Flight> quickSortedData = quickSort(unsorted_flights, quick_num_swaps);
 
 
     //Print out info on sort time and num of swaps
