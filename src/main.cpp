@@ -100,7 +100,29 @@ int main(){
             cout << '\t' << "Number of swaps: " << quick_num_swaps << endl;
         }
         else if(command == "/numdelays_airline"){
-            //finish command
+            if(arguments.empty()){
+            cout << "|ERROR| No airline specified" << endl;
+            continue;
+            }
+            string airline = arguments[0];
+            int total_num = 0;
+            int num_delayed = 0;
+            for(int i = 0; i < quickSortedData.size(); i++){
+                if((quickSortedData[i].get_airline() == airline) && (quickSortedData[i].any_delay() == true)){
+                    total_num += 1;
+                    num_delayed += 1;
+                }
+                else if(quickSortedData[i].get_airline() == airline){
+                    total_num += 1;
+                }
+            }
+            float per_delayed =(num_delayed / total_num) * 100;
+            
+            cout << airline << ": " << endl;
+            cout << "Total number of flights: " << total_num << endl;
+            cout << "Number of flights delayed: " << num_delayed << endl;
+            cout << "Percentage delayed: " << per_delayed << "%" << endl;
+            cout << endl;
         }
         else if(command == "/numdelays_airport"){
             //finish command

@@ -180,3 +180,9 @@ void Flight::print_all_data(){
 void Flight::print_data_clean(){
     cout << "Work in progress";
 }
+bool Flight::any_delay(){
+    if(this->dep_delay_tag == true || this->arr_delay_tag == true){
+        return true;
+    }
+    return false;
+}

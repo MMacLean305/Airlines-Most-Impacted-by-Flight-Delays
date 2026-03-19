@@ -97,4 +97,5 @@ class Flight{
         int total_delay();
         void print_all_data();
         void print_data_clean();
+        bool any_delay();
 };
