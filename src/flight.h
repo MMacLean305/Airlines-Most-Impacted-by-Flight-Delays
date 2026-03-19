@@ -96,4 +96,5 @@ class Flight{
         //Other functions
         int total_delay();
         void print_all_data();
+        void print_data_clean();
 };

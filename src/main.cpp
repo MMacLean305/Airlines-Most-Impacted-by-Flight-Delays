@@ -5,6 +5,7 @@
 #include "quicksort.h"
 #include "heapsort.h"
 #include <vector>
+#include <sstream>
 using namespace std;
 
 /*
@@ -58,11 +59,115 @@ int main(){
         cout << "Please enter a command (/h for help):" << endl;
         getline(cin, raw_command);
 
-        if(raw_command == "/h"){
-            cout << "|HELP| List of functions" << endl;
+        istringstream strstream(raw_command);
+
+
+        string command = "";
+        strstream >> command;
+        vector<std::string> arguments;
+        string argument;
+
+        while (strstream >> argument) {
+            arguments.push_back(argument);
+        }
+
+
+        if(command == "/h"){
+            cout << "|HELP| List of functions " << endl;
+            cout << '\t' << "/h : List functions" << endl;
+            cout << '\t' << "/numdelays_airline (airline) : Prints the number of delayed flights from a given airline" <<endl;
+            cout << '\t' << "/numdelays_airport (arrival airport) (arrival airport) : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
+            cout << '\t' << "/numdelays_day (day of week) : Shows the number of delayed flights for a given day of week" << endl;
+            cout << '\t' << "/bw_days : Prints the 5 days with most/least delays" << endl;
+            cout << '\t' << "/bw_airport : Prints the 5 airports with most/least delays" << endl;
+            cout << '\t' << "/show10 : Prints the first 10 datapoints of each sorted list" <<endl;
+            cout << '\t' << "/show50 : Prints the first 50 datapoints of each sorted list" <<endl;
+            cout << '\t' << "/show100 : Prints the first 100 datapoints of each sorted list" <<endl;
+            cout << '\t' << "/show500 : Prints the first 500 datapoints of each sorted list" <<endl;
+            cout << '\t' << "/show# (number) : Prints the number of datapoints of each sorted list" << endl;
+            cout << '\t' << "/quit : Quits" << endl;
             //ADD MORE COMMANDS HERE
         }
-        else if(raw_command == "/quit"){
+        else if(command == "/show10"){
+            cout << "Quick sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 10; i++){
+                quickSortedData[i].print_data_clean();
+            }
+            cout << endl;
+            cout << "Heap sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 10; i++){
+                heapSortedData[i].print_data_clean();
+            }
+            cout << endl;
+        }
+        else if(command == "/show50"){
+            cout << "Quick sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 50; i++){
+                quickSortedData[i].print_data_clean();
+            }
+            cout << endl;
+            cout << "Heap sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 50; i++){
+                heapSortedData[i].print_data_clean();
+            }
+            cout << endl;
+        }
+        else if(command == "/show100"){
+            cout << "Quick sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 100; i++){
+                quickSortedData[i].print_data_clean();
+            }
+            cout << endl;
+            cout << "Heap sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 100; i++){
+                heapSortedData[i].print_data_clean();
+            }
+            cout << endl;
+        }
+        else if(command == "/show500"){
+            cout << "Quick sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 500; i++){
+                quickSortedData[i].print_data_clean();
+            }
+            cout << endl;
+            cout << "Heap sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < 500; i++){
+                heapSortedData[i].print_data_clean();
+            }
+            cout << endl;
+        }
+        else if(command == "/show#"){
+            if(arguments.empty()){
+                cout << "|ERROR| No number specified" << endl;
+                continue;
+            }
+            if(!stoi(arguments[0])){
+                cout << "|ERROR| No number specified" << endl;
+                    continue;
+            }
+            int num_to_print = stoi(arguments[0]);
+            cout << "Quick sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < num_to_print; i++){
+                quickSortedData[i].print_data_clean();
+            }
+            cout << endl;
+            cout << "Heap sort: " << endl;
+            cout << endl;
+            for(int i = 0; i < num_to_print; i++){
+                heapSortedData[i].print_data_clean();
+            }
+            cout << endl;
+        }
+        else if(command == "/quit"){
             break;
         }
         else{

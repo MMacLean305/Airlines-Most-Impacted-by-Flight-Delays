@@ -177,3 +177,6 @@ int Flight::total_delay(){
 void Flight::print_all_data(){
     cout << "Work in progress";
 }
+void Flight::print_data_clean(){
+    cout << "Work in progress";
+}
