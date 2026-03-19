@@ -57,6 +57,31 @@ vector<Flight> scrape_data(const std::string& filename){
         getline(raw, manufacturer, ',');
         getline(raw, model, ',');
         getline(raw, aircraft_age, ',');
+        
+        new Flight(
+            flight_date, 
+            day_of_week, 
+            airline,
+            tail_number,
+            dep_airport,
+            dep_city,
+            dep_time,
+            dep_delay_tag,
+            dep_delay_type,
+            arr_airport,
+            arr_city,
+            arr_delay,
+            arr_delay_type,
+            flight_dur,
+            distance_type,
+            delay_carrier,
+            delay_weather,
+            delay_nas,
+            delay_security,
+            delay_last_aircraft,
+            manufacturer,
+            model,
+            aircraft_age);
 
     }
 }

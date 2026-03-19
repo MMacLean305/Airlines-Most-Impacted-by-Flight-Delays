@@ -1,7 +1,7 @@
-#pragma once
 
 #pragma once
 
+#include "flight.h"
 #include <vector>
 
 using namespace std;

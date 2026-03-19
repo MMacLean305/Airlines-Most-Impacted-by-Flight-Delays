@@ -26,6 +26,8 @@ int main(){
     vector<Flight> quickSortedData = quickSort(flights, quick_num_swaps);
 
 
+    //Print out info on sort time and num of swaps
+
     cout << "Heap Sort:" << endl;
     cout << '\t' << "Execution time: " << heap_execution << endl;
     cout << '\t' << "Number of swaps: " << heap_num_swaps << endl;
