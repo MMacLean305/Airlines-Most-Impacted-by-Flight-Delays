@@ -6,6 +6,21 @@
 #include "heapsort.h"
 #include <vector>
 using namespace std;
+
+/*
+To do list:
+-CMake
+-quicksort
+-heapsort
+-finish console functions
+-debug
+*/
+
+
+
+
+
+
 int main(){
     //File io
     vector<Flight> unsorted_flights = scrape_data("US_flights_2023.csv");
