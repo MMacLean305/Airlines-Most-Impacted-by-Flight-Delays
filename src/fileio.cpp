@@ -17,6 +17,7 @@ vector<Flight> scrape_data(const std::string& filename){
         string dep_airport;
         string dep_city;
         string dep_time;
+        string dep_delay;
         string dep_delay_tag;
         string dep_delay_type;
         string arr_airport;
@@ -41,6 +42,7 @@ vector<Flight> scrape_data(const std::string& filename){
         getline(raw, dep_airport, ',');
         getline(raw, dep_city, ',');
         getline(raw, dep_time, ',');
+        getline(raw, dep_delay, ',');
         getline(raw, dep_delay_tag, ',');
         getline(raw, dep_delay_type, ',');
         getline(raw, arr_airport, ',');
@@ -58,7 +60,7 @@ vector<Flight> scrape_data(const std::string& filename){
         getline(raw, model, ',');
         getline(raw, aircraft_age, ',');
         
-        new Flight(
+        Flight curr_flight = Flight(
             flight_date, 
             day_of_week, 
             airline,
@@ -66,6 +68,7 @@ vector<Flight> scrape_data(const std::string& filename){
             dep_airport,
             dep_city,
             dep_time,
+            dep_delay,
             dep_delay_tag,
             dep_delay_type,
             arr_airport,
@@ -82,6 +85,6 @@ vector<Flight> scrape_data(const std::string& filename){
             manufacturer,
             model,
             aircraft_age);
-
+        flights.push_back(curr_flight);
     }
 }

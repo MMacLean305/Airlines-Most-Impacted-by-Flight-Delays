@@ -3,14 +3,15 @@
 using namespace std;
 
 //Constructor
-Flight(
-    std::string flight_date,
-    std::string day_of_week,
+Flight::Flight(
+    string flight_date,
+    string day_of_week,
     std::string airline,
     std::string tail_number,
     std::string dep_airport,
     std::string dep_city,
     std::string dep_time,
+    string dep_delay,
     std::string dep_delay_tag,
     std::string dep_delay_type,
     std::string arr_airport,
@@ -28,7 +29,68 @@ Flight(
     std::string model,
     std::string aircraft_age
 ){
+    this->flight_date = flight_date;
+    this->day_of_week = stoi(day_of_week);
+    this->airline = airline;
+    this->tail_number = tail_number;
+    this->departure_airport = dep_airport;
+    this->departure_city_name = dep_city;
+    this->departure_time_label = dep_time;
+    this->arrival_airport = arr_airport;
+    this->arrival_city_name = arr_city;
+    this->flight_dur = flight_dur;
+    this->distance_type = distance_type;
+    this->manufacturer = manufacturer;
+    this->model = model;
+    this->aircraft_age = stoi(aircraft_age);
     
+    if(dep_delay_tag[0] == '1'){
+        this->dep_delay_tag = true;
+    }else{
+        this->dep_delay_tag = false;
+    }
+
+    this->dep_delay_type = dep_delay_type;
+    this->arr_delay_type = arr_delay_type;
+    this->dep_delay = stoi(dep_delay);
+    this->arr_delay = stoi(arr_delay); 
+    if(this->arr_delay != 0){
+        this->arr_delay_tag = true;
+    }
+    else{
+        this->arr_delay_tag = false;
+    }
+
+    if(delay_carrier[0] == '1'){
+        this->delay_carrier = true;
+    }
+    else{
+        this->delay_carrier = false;
+    }
+    if(delay_weather[0] == '1'){
+        this->delay_weather = true;
+    }
+    else{
+        this->delay_weather = false;
+    }
+
+    if(delay_nas[0] = '1'){
+        this->delay_nas = true;
+    }else{
+        this->delay_nas = false;
+    }
+
+    if(delay_security[0] = '1'){
+        this->delay_security = true;
+    }else{
+        this->delay_security = false;
+    }
+
+    if(delay_last_aircraft[0] = '1'){
+        this->delay_last_aircraft = true;
+    }else{
+        this->delay_last_aircraft = false;
+    }
 }
 
 //Getter functions
@@ -109,5 +171,9 @@ bool Flight::get_delay_last_aircraft(){
 }
 
 //Other functions
-int total_delay();
-void print_all_data();
+int Flight::total_delay(){
+    return std::max(0, dep_delay) + std::max(0, arr_delay);
+}
+void Flight::print_all_data(){
+    cout << "Work in progress";
+}

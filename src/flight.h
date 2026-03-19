@@ -45,6 +45,7 @@ class Flight{
             std::string dep_airport,
             std::string dep_city,
             std::string dep_time,
+            std::string dep_delay,
             std::string dep_delay_tag,
             std::string dep_delay_type,
             std::string arr_airport,
