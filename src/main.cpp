@@ -75,11 +75,13 @@ int main(){
         if(command == "/h"){
             cout << "|HELP| List of functions " << endl;
             cout << '\t' << "/h : List functions" << endl;
+            cout << '\t' << "/compare_sort : Reprints the sort alogrithm comparison information" << endl;
             cout << '\t' << "/numdelays_airline (airline) : Prints the number of delayed flights from a given airline" <<endl;
             cout << '\t' << "/numdelays_airport (arrival airport) (arrival airport) : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
             cout << '\t' << "/numdelays_day (day of week) : Shows the number of delayed flights for a given day of week" << endl;
+            cout << '\t' << "/bw_dates : Prints the 5 dates with most/least delays" << endl;
             cout << '\t' << "/bw_days : Prints the 5 days with most/least delays" << endl;
-            cout << '\t' << "/bw_airport : Prints the 5 airports with most/least delays" << endl;
+            cout << '\t' << "/bw_airlines : Prints the 5 airlines with most/least delays" << endl;
             cout << '\t' << "/show10 : Prints the first 10 datapoints of each sorted list" <<endl;
             cout << '\t' << "/show50 : Prints the first 50 datapoints of each sorted list" <<endl;
             cout << '\t' << "/show100 : Prints the first 100 datapoints of each sorted list" <<endl;
@@ -87,6 +89,33 @@ int main(){
             cout << '\t' << "/show# (number) : Prints the number of datapoints of each sorted list" << endl;
             cout << '\t' << "/quit : Quits" << endl;
             //ADD MORE COMMANDS HERE
+        }
+        else if(command == "/compare_sort"){
+            cout << "Heap Sort:" << endl;
+            cout << '\t' << "Execution time: " << heap_execution << endl;
+            cout << '\t' << "Number of swaps: " << heap_num_swaps << endl;
+
+            cout << "Quick Sort:" << endl;
+            cout << '\t' << "Execution time: " << quick_execution << endl;
+            cout << '\t' << "Number of swaps: " << quick_num_swaps << endl;
+        }
+        else if(command == "/numdelays_airline"){
+            //finish command
+        }
+        else if(command == "/numdelays_airport"){
+            //finish command
+        }
+        else if(command == "/numdelays_day"){
+            //finish command
+        }
+        else if(command == "/bw_dates"){
+            //finish command
+        }
+        else if(command == "/bw_days"){
+            //finish command
+        }
+        else if(command == "/bw_airlines"){
+            //finish command
         }
         else if(command == "/show10"){
             cout << "Quick sort: " << endl;
@@ -145,6 +174,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show#"){
+            //Exception handler
             if(arguments.empty()){
                 cout << "|ERROR| No number specified" << endl;
                 continue;
@@ -154,6 +184,7 @@ int main(){
                     continue;
             }
             int num_to_print = stoi(arguments[0]);
+
             cout << "Quick sort: " << endl;
             cout << endl;
             for(int i = 0; i < num_to_print; i++){
