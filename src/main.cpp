@@ -35,8 +35,8 @@ int main(){
     double quick_execution = 0.0; //temp value
     int quick_num_swaps = 0; //temp value
 
-    vector<Flight> heapSortedData = heapSort(unsorted_flights, heap_num_swaps);
-    vector<Flight> quickSortedData = quickSort(unsorted_flights, quick_num_swaps);
+    heapSort(unsorted_flights, heap_num_swaps);
+    quickSort(unsorted_flights, quick_num_swaps);
 
 
     //Print out info on sort time and num of swaps
