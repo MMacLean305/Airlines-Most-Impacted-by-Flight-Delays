@@ -24,7 +24,9 @@ To do list:
 
 int main(){
     //File io
-    vector<Flight> unsorted_flights = scrape_data("US_flights_2023.csv");
+    vector<Flight> unsorted_flights_quick = scrape_data("US_flights_2023.csv");
+
+    vector<Flight> unsorted_flights_heap = scrape_data("US_flights_2023.csv");
 
 
 
@@ -35,8 +37,8 @@ int main(){
     double quick_execution = 0.0; //temp value
     int quick_num_swaps = 0; //temp value
 
-    heapSort(unsorted_flights, heap_num_swaps);
-    quickSort(unsorted_flights, quick_num_swaps);
+    heapSort(unsorted_flights_heap, heap_num_swaps);
+    quickSort(unsorted_flights_quick, quick_num_swaps);
 
 
     //Print out info on sort time and num of swaps
