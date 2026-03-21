@@ -6,6 +6,7 @@
 #include "heapsort.h"
 #include <vector>
 #include <sstream>
+#include <unordered_map>
 using namespace std;
 
 /*
@@ -39,6 +40,9 @@ int main(){
 
     heapSort(unsorted_flights_heap, heap_num_swaps);
     quickSort(unsorted_flights_quick, quick_num_swaps);
+
+    vector<Flight> heapSortedData = unsorted_flights_heap;
+    vector<Flight> quickSortedData = unsorted_flights_quick;
 
 
     //Print out info on sort time and num of swaps
