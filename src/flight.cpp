@@ -74,19 +74,19 @@ Flight::Flight(
         this->delay_weather = false;
     }
 
-    if(delay_nas[0] = '1'){
+    if(delay_nas[0] == '1'){
         this->delay_nas = true;
     }else{
         this->delay_nas = false;
     }
 
-    if(delay_security[0] = '1'){
+    if(delay_security[0] == '1'){
         this->delay_security = true;
     }else{
         this->delay_security = false;
     }
 
-    if(delay_last_aircraft[0] = '1'){
+    if(delay_last_aircraft[0] == '1'){
         this->delay_last_aircraft = true;
     }else{
         this->delay_last_aircraft = false;

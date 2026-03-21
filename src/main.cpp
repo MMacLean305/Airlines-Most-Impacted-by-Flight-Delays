@@ -79,7 +79,7 @@ int main(){
             cout << '\t' << "/h : List functions" << endl;
             cout << '\t' << "/compare_sort : Reprints the sort alogrithm comparison information" << endl;
             cout << '\t' << "/numdelays_airline (airline) : Prints the number of delayed flights from a given airline" <<endl;
-            cout << '\t' << "/numdelays_airport (arrival airport) (arrival airport) : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
+            cout << '\t' << "/numdelays_airport (departure airport) (arrival airport) : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
             cout << '\t' << "/numdelays_day (day of week) : Shows the number of delayed flights for a given day of week" << endl;
             cout << '\t' << "/bw_dates : Prints the 5 dates with most/least delays" << endl;
             cout << '\t' << "/bw_days : Prints the 5 days with most/least delays" << endl;
@@ -127,10 +127,77 @@ int main(){
             cout << endl;
         }
         else if(command == "/numdelays_airport"){
-            //finish command
+
+            if (arguments.size() < 2){
+                cout << "|ERROR| Not enough arguments" << endl;
+                continue;
+            }
+
+            string departure = arguments[0];
+            string arrival = arguments[1];
+
+            int count = 0;
+
+            for (Flight flight : quickSortedData){
+                if((flight.get_departure_airport() == departure) && (flight.get_arrival_airport() == arrival) && flight.any_delay()){
+                    count++;
+                }
+            }
+            cout << "Departure airport: " << departure <<  "to Arrival airport: " << arrival << endl;
+            cout << "Number of delayed flights: " << count << endl;
+
         }
         else if(command == "/numdelays_day"){
-            //finish command
+
+            if (arguments.empty()){
+                cout << "|ERROR| No day specified" << endl;
+                continue;
+            }
+
+            int day = 0;
+            
+            if (arguments[0] == "Monday"){
+                day = 1;
+            }
+            else if (arguments[0] == "Tuesday"){
+                day = 2;
+            }
+            else if (arguments[0] == "Wednesday"){
+                day = 3;
+            }
+            else if (arguments[0] == "Thursday"){
+                day = 4;
+            }
+            else if (arguments[0] == "Friday"){
+                day = 5;
+            }
+            else if (arguments[0] == "Saturday"){
+                day = 6;
+            }
+            else if (arguments[0] == "Sunday"){
+                day = 7;
+            }
+            else{
+                cout << "|ERROR| Invalid day specified" << endl;
+                continue;
+            }
+
+            unordered_map<int, int> freq;
+
+            for (Flight flight : quickSortedData){
+                if(flight.total_delay() > 0){
+                    freq[flight.get_day_of_week()]++;
+                }
+            }
+
+            for (auto iter = freq.begin(); iter != freq.end(); iter++){
+                if (iter->first == day){
+                    cout << "Day: " << iter->first << endl;
+                    cout << "Number of delayed flights: " << iter->second << endl;
+                    cout << endl;
+                }
+            }
+
         }
         else if(command == "/bw_dates"){
             //finish command
