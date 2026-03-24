@@ -98,4 +98,14 @@ class Flight{
         void print_all_data();
         void print_data_clean();
         bool any_delay();
+
+
 };
+
+//comparison functions
+//https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
+
+template<typename T>
+bool compareDelay(pair(T, int) a, pair(T, int) b){
+    return a.second > b.second;
+}

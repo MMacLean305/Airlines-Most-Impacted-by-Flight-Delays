@@ -38,8 +38,8 @@ int main(){
     double quick_execution = 0.0; //temp value
     int quick_num_swaps = 0; //temp value
 
-    heapSort(unsorted_flights_heap, heap_num_swaps);
-    quickSort(unsorted_flights_quick, quick_num_swaps);
+    heapSort(unsorted_flights_heap, heap_num_swaps, unsorted_flights_heap.size());
+    quickSort(unsorted_flights_quick, 0, unsorted_flights_quick.size() - 1, quick_num_swaps);
 
     vector<Flight> heapSortedData = unsorted_flights_heap;
     vector<Flight> quickSortedData = unsorted_flights_quick;
@@ -203,6 +203,7 @@ int main(){
             }
 
         }
+        //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_dates"){
             unordered_map<int, int> freq;
 
@@ -211,7 +212,11 @@ int main(){
                     freq[flight.get_flight_date()]++;
                 }
             }
+
+            vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
         }
+               //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_days"){
             unordered_map<int, int> freq;
 
@@ -221,9 +226,11 @@ int main(){
                 }
             }
 
-            
+            vector<pair<int, int>> sorted_freq(freq.begin(), freq.end());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
 
         }
+               //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_airlines"){
             unordered_map<int, int> freq;
 
@@ -232,6 +239,10 @@ int main(){
                     freq[flight.get_airline()]++;
                 }
             }
+
+            vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
+
         }
         else if(command == "/show10"){
             cout << "Quick sort: " << endl;
