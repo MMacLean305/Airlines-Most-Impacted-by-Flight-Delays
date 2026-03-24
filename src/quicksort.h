@@ -6,7 +6,9 @@
 
 using namespace std;
 
-void quickSort(vector<Flight> data,int low, int high, int& swaps){
+//Pseudocode from Discussion 8 Slides
+
+void quickSort(vector<Flight>& data,int low, int high, int& swaps){
 
     if (data.at(low).total_delay() < data.at(high).total_delay()){
         int pivot = partition(data, low, high, swaps);
@@ -16,7 +18,7 @@ void quickSort(vector<Flight> data,int low, int high, int& swaps){
 
 }
 
-int partition (vector<Flight> data, int low, int high, int& swaps){
+int partition (vector<Flight>& data, int low, int high, int& swaps){
 
     int pivot = data.at(low).total_delay();
     int up = low;

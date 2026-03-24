@@ -204,13 +204,34 @@ int main(){
 
         }
         else if(command == "/bw_dates"){
-            //finish command
+            unordered_map<int, int> freq;
+
+            for (Flight flight : quickSortedData){
+                if(flight.total_delay() > 0){
+                    freq[flight.get_flight_date()]++;
+                }
+            }
         }
         else if(command == "/bw_days"){
-            //finish command
+            unordered_map<int, int> freq;
+
+            for (Flight flight : quickSortedData){
+                if(flight.total_delay() > 0){
+                    freq[flight.get_day_of_week()]++;
+                }
+            }
+
+            
+
         }
         else if(command == "/bw_airlines"){
-            //finish command
+            unordered_map<int, int> freq;
+
+            for (Flight flight : quickSortedData){
+                if(flight.total_delay() > 0){
+                    freq[flight.get_airline()]++;
+                }
+            }
         }
         else if(command == "/show10"){
             cout << "Quick sort: " << endl;
