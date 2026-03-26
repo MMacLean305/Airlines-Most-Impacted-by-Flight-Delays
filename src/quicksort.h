@@ -10,41 +10,46 @@ using namespace std;
 
 int partition (vector<Flight>& data, int low, int high, int& swaps){
 
-    int pivot = data.at(low).total_delay();
-    int up = low;
-    int down = high;
-
-    while (up < down){
-        for (int i = up; i < high; i++){
-            if (data.at(i).total_delay() > pivot){
-                break;
-            }
-            up++;
-        }
-
-        for (int i = down; i > low; i--){
-            if(data.at(i).total_delay() < pivot){
-                break;
-            }
-            down--;
-        }
-
-        if (up < down){
-            swap(data.at(up), data.at(down));
-            swaps++;
-        }
-    }
-    swap(data.at(low), data.at(down));
-    swaps++;
-    return down;
+    // int mid = (low + high) / 2;
+    // swap(data.at(low), data.at(mid));
+    // swaps++;
+    //
+    // int pivot = data.at(low).total_delay();
+    // int up = low + 1;
+    // int down = high;
+    //
+    //
+    // while (true){
+    //     while (up<=high && data.at(up).total_delay() < pivot) {
+    //         up++;
+    //     }
+    //
+    //     while (down >= low && data.at(down).total_delay() >= pivot) {
+    //         down--;
+    //     }
+    //
+    //     if (up >= down) {
+    //         break;
+    //     }
+    //     swap(data.at(up), data.at(down));
+    //     swaps++;
+    //
+    // }
+    // swap(data.at(low), data.at(down));
+    // swaps++;
+    // return down;
 }
 
 void quickSort(vector<Flight>& data,int low, int high, int& swaps){
 
-    if (low < high){
-        int pivot = partition(data, low, high, swaps);
-        quickSort(data,low, pivot-1, swaps);
-        quickSort(data, pivot+1, high, swaps);
-    }
+    // if (low < high){
+    //     int pivot = partition(data, low, high, swaps);
+    //     if (pivot > low) {
+    //         quickSort(data,low, pivot -1, swaps);
+    //     }
+    //     if (pivot < high) {
+    //         quickSort(data, pivot + 1, high, swaps);
+    //     }
+    // }
 
 }

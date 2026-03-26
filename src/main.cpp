@@ -28,7 +28,7 @@ int main(){
 
     vector<Flight> unsorted_flights_heap = scrape_data("US_flights_2023.csv");
 
-
+    cout << "hi" << endl;
 
     //Call the heap sort and quick sort
 
@@ -38,9 +38,11 @@ int main(){
     int quick_num_swaps = 0; //temp value
 
     heapSort(unsorted_flights_heap, heap_num_swaps, unsorted_flights_heap.size());
+    cout << "hi" << endl;
     quickSort(unsorted_flights_quick, 0, unsorted_flights_quick.size() - 1, quick_num_swaps);
 
     vector<Flight> heapSortedData = unsorted_flights_heap;
+    cout << "hi" << endl;
     vector<Flight> quickSortedData = unsorted_flights_quick;
 
 
