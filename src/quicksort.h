@@ -41,7 +41,7 @@ int partition (vector<Flight>& data, int low, int high, int& swaps){
 
 void quickSort(vector<Flight>& data,int low, int high, int& swaps){
 
-    if (data.at(low).total_delay() < data.at(high).total_delay()){
+    if (low < high){
         int pivot = partition(data, low, high, swaps);
         quickSort(data,low, pivot-1, swaps);
         quickSort(data, pivot+1, high, swaps);
