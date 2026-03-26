@@ -193,7 +193,6 @@ int main(){
 
             for (auto iter = freq.begin(); iter != freq.end(); iter++){
                 if (iter->first == day){
-                    cout << "Day: " << iter->first << endl;
                     cout << "Number of delayed flights: " << iter->second << endl;
                     cout << endl;
                 }
@@ -245,13 +244,18 @@ int main(){
             cout << "Quick sort: " << endl;
             cout << endl;
             for(int i = 0; i < 10; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
+                cout << endl;
             }
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
             for(int i = 0; i < 10; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
+                cout << endl;
+
             }
             cout << endl;
         }
@@ -259,13 +263,17 @@ int main(){
             cout << "Quick sort: " << endl;
             cout << endl;
             for(int i = 0; i < 50; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
+                cout << endl;
             }
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
             for(int i = 0; i < 50; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
+                cout << endl;
             }
             cout << endl;
         }
@@ -273,13 +281,17 @@ int main(){
             cout << "Quick sort: " << endl;
             cout << endl;
             for(int i = 0; i < 100; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
+                cout << endl;
             }
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
             for(int i = 0; i < 100; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
+                cout << endl;
             }
             cout << endl;
         }
@@ -287,13 +299,17 @@ int main(){
             cout << "Quick sort: " << endl;
             cout << endl;
             for(int i = 0; i < 500; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
+                cout << endl;
             }
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
             for(int i = 0; i < 500; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
+                cout << endl;
             }
             cout << endl;
         }

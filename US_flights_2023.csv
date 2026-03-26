@@ -1,0 +1,150 @@
+FlightDate,Day_Of_Week,Airline,Tail_Number,Dep_Airport,Dep_CityName,DepTime_label,Dep_Delay,Dep_Delay_Tag,Dep_Delay_Type,Arr_Airport,Arr_CityName,Arr_Delay,Arr_Delay_Type,Flight_Duration,Distance_type,Delay_Carrier,Delay_Weather,Delay_NAS,Delay_Security,Delay_LastAircraft,Manufacturer,Model,Aicraft_age
+1/2/2023,1,Endeavor Air,N605LR,BDL,"Hartford, CT",Morning,-3,0,Low <5min,LGA,"New York, NY",-12,Low <5min,56,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/3/2023,2,Endeavor Air,N605LR,BDL,"Hartford, CT",Morning,-5,0,Low <5min,LGA,"New York, NY",-8,Low <5min,62,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/4/2023,3,Endeavor Air,N331PQ,BDL,"Hartford, CT",Morning,-5,0,Low <5min,LGA,"New York, NY",-21,Low <5min,49,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/5/2023,4,Endeavor Air,N906XJ,BDL,"Hartford, CT",Morning,-6,0,Low <5min,LGA,"New York, NY",-17,Low <5min,54,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/6/2023,5,Endeavor Air,N337PQ,BDL,"Hartford, CT",Morning,-1,0,Low <5min,LGA,"New York, NY",-16,Low <5min,50,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/7/2023,6,Endeavor Air,N336PQ,BDL,"Hartford, CT",Morning,-10,0,Low <5min,LGA,"New York, NY",-13,Low <5min,62,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/14/2023,6,Endeavor Air,N311PQ,LGA,"New York, NY",Afternoon,-8,0,Low <5min,CVG,"Cincinnati, OH",-31,Low <5min,117,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/21/2023,6,Endeavor Air,N917XJ,LGA,"New York, NY",Afternoon,-10,0,Low <5min,CVG,"Cincinnati, OH",-25,Low <5min,125,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/28/2023,6,Endeavor Air,N336PQ,LGA,"New York, NY",Afternoon,-5,0,Low <5min,CVG,"Cincinnati, OH",-15,Low <5min,130,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/9/2023,1,Endeavor Air,N491PX,LGA,"New York, NY",Evening,-7,0,Low <5min,BGM,"Binghamton, NY",-3,Low <5min,63,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,4
+1/10/2023,2,Endeavor Air,N478PX,LGA,"New York, NY",Evening,-15,0,Low <5min,BGM,"Binghamton, NY",6,Low <5min,80,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,5
+1/11/2023,3,Endeavor Air,N135EV,LGA,"New York, NY",Evening,35,1,Medium >15min,BGM,"Binghamton, NY",61,Hight >60min,85,Short Haul >1500Mi,0,0,26,0,35,CANADAIR REGIONAL JET,CRJ,15
+1/12/2023,4,Endeavor Air,N197PQ,LGA,"New York, NY",Evening,132,1,Hight >60min,BGM,"Binghamton, NY",132,Hight >60min,59,Short Haul >1500Mi,50,0,0,0,82,CANADAIR REGIONAL JET,CRJ,16
+1/13/2023,5,Endeavor Air,N915XJ,LGA,"New York, NY",Evening,-5,0,Low <5min,BGM,"Binghamton, NY",34,Medium >15min,98,Short Haul >1500Mi,0,0,34,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/15/2023,7,Endeavor Air,N920XJ,LGA,"New York, NY",Evening,5,1,Low <5min,BGM,"Binghamton, NY",4,Low <5min,58,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/16/2023,1,Endeavor Air,N916XJ,LGA,"New York, NY",Evening,-3,0,Low <5min,BGM,"Binghamton, NY",14,Low <5min,76,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/17/2023,2,Endeavor Air,N902XJ,LGA,"New York, NY",Evening,15,1,Low <5min,BGM,"Binghamton, NY",40,Medium >15min,84,Short Haul >1500Mi,0,0,40,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/18/2023,3,Endeavor Air,N491PX,LGA,"New York, NY",Evening,-7,0,Low <5min,BGM,"Binghamton, NY",-2,Low <5min,64,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,4
+1/19/2023,4,Endeavor Air,N691CA,LGA,"New York, NY",Evening,676,1,Hight >60min,BGM,"Binghamton, NY",673,Hight >60min,56,Short Haul >1500Mi,0,667,0,0,6,CANADAIR REGIONAL JET,CRJ,17
+1/20/2023,5,Endeavor Air,N904XJ,LGA,"New York, NY",Evening,-10,0,Low <5min,BGM,"Binghamton, NY",36,Medium >15min,105,Short Haul >1500Mi,0,0,36,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/22/2023,7,Endeavor Air,N310PQ,LGA,"New York, NY",Evening,29,1,Medium >15min,BGM,"Binghamton, NY",47,Medium >15min,77,Short Haul >1500Mi,29,0,18,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/23/2023,1,Endeavor Air,N917XJ,LGA,"New York, NY",Evening,27,1,Medium >15min,BGM,"Binghamton, NY",22,Medium >15min,54,Short Haul >1500Mi,0,0,0,0,22,CANADAIR REGIONAL JET,CRJ,16
+1/24/2023,2,Endeavor Air,N182GJ,LGA,"New York, NY",Evening,-3,0,Low <5min,BGM,"Binghamton, NY",-18,Low <5min,44,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/25/2023,3,Endeavor Air,N490PX,LGA,"New York, NY",Evening,50,1,Medium >15min,BGM,"Binghamton, NY",61,Hight >60min,70,Short Haul >1500Mi,25,0,11,0,25,CANADAIR REGIONAL JET,CRJ,4
+1/26/2023,4,Endeavor Air,N134EV,LGA,"New York, NY",Evening,-13,0,Low <5min,BGM,"Binghamton, NY",-3,Low <5min,69,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/27/2023,5,Endeavor Air,N919XJ,LGA,"New York, NY",Evening,-11,0,Low <5min,BGM,"Binghamton, NY",-4,Low <5min,66,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/29/2023,7,Endeavor Air,N485PX,LGA,"New York, NY",Evening,-19,0,Low <5min,BGM,"Binghamton, NY",-17,Low <5min,61,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,4
+1/30/2023,1,Endeavor Air,N491PX,LGA,"New York, NY",Evening,-10,0,Low <5min,BGM,"Binghamton, NY",-6,Low <5min,63,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,4
+1/31/2023,2,Endeavor Air,N485PX,LGA,"New York, NY",Evening,16,1,Medium >15min,BGM,"Binghamton, NY",10,Low <5min,53,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,4
+1/1/2023,7,Endeavor Air,N906XJ,DLH,"Duluth, MN",Night,6,1,Low <5min,MSP,"Minneapolis, MN",24,Medium >15min,94,Short Haul >1500Mi,6,0,18,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/2/2023,1,Endeavor Air,N197PQ,DLH,"Duluth, MN",Night,-8,0,Low <5min,MSP,"Minneapolis, MN",-4,Low <5min,80,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/9/2023,1,Endeavor Air,N181GJ,ATL,"Atlanta, GA",Afternoon,-3,0,Low <5min,FAY,"Fayetteville, NC",-12,Low <5min,67,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/10/2023,2,Endeavor Air,N937XJ,ATL,"Atlanta, GA",Afternoon,-5,0,Low <5min,FAY,"Fayetteville, NC",-12,Low <5min,69,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/11/2023,3,Endeavor Air,N604LR,ATL,"Atlanta, GA",Afternoon,-2,0,Low <5min,FAY,"Fayetteville, NC",-7,Low <5min,71,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/12/2023,4,Endeavor Air,N371CA,ATL,"Atlanta, GA",Afternoon,16,1,Medium >15min,FAY,"Fayetteville, NC",11,Low <5min,71,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,21
+1/13/2023,5,Endeavor Air,N324PQ,ATL,"Atlanta, GA",Afternoon,-3,0,Low <5min,FAY,"Fayetteville, NC",-8,Low <5min,71,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/14/2023,6,Endeavor Air,N316PQ,ATL,"Atlanta, GA",Afternoon,-1,0,Low <5min,FAY,"Fayetteville, NC",-4,Low <5min,73,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/15/2023,7,Endeavor Air,N197PQ,ATL,"Atlanta, GA",Afternoon,-3,0,Low <5min,FAY,"Fayetteville, NC",-7,Low <5min,72,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/16/2023,1,Endeavor Air,N907XJ,ATL,"Atlanta, GA",Afternoon,-3,0,Low <5min,FAY,"Fayetteville, NC",-9,Low <5min,70,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/17/2023,2,Endeavor Air,N186PQ,ATL,"Atlanta, GA",Afternoon,-5,0,Low <5min,FAY,"Fayetteville, NC",-7,Low <5min,74,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/18/2023,3,Endeavor Air,N601LR,ATL,"Atlanta, GA",Afternoon,-5,0,Low <5min,FAY,"Fayetteville, NC",-17,Low <5min,64,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/19/2023,4,Endeavor Air,N135EV,ATL,"Atlanta, GA",Afternoon,-5,0,Low <5min,FAY,"Fayetteville, NC",-11,Low <5min,70,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/20/2023,5,Endeavor Air,N292PQ,ATL,"Atlanta, GA",Afternoon,0,0,Low <5min,FAY,"Fayetteville, NC",-7,Low <5min,69,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/21/2023,6,Endeavor Air,N279PQ,ATL,"Atlanta, GA",Afternoon,-6,0,Low <5min,FAY,"Fayetteville, NC",-23,Low <5min,59,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/22/2023,7,Endeavor Air,N601LR,ATL,"Atlanta, GA",Afternoon,-2,0,Low <5min,FAY,"Fayetteville, NC",-2,Low <5min,76,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/23/2023,1,Endeavor Air,N606LR,ATL,"Atlanta, GA",Afternoon,-1,0,Low <5min,FAY,"Fayetteville, NC",-10,Low <5min,67,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/24/2023,2,Endeavor Air,N295PQ,ATL,"Atlanta, GA",Afternoon,-5,0,Low <5min,FAY,"Fayetteville, NC",-15,Low <5min,66,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/25/2023,3,Endeavor Air,N313PQ,ATL,"Atlanta, GA",Afternoon,10,1,Low <5min,FAY,"Fayetteville, NC",11,Low <5min,77,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/26/2023,4,Endeavor Air,N146PQ,ATL,"Atlanta, GA",Afternoon,11,1,Low <5min,FAY,"Fayetteville, NC",3,Low <5min,68,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/27/2023,5,Endeavor Air,N923XJ,ATL,"Atlanta, GA",Afternoon,-4,0,Low <5min,FAY,"Fayetteville, NC",-9,Low <5min,71,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/28/2023,6,Endeavor Air,N923XJ,ATL,"Atlanta, GA",Afternoon,-5,0,Low <5min,FAY,"Fayetteville, NC",-17,Low <5min,64,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/29/2023,7,Endeavor Air,N337PQ,ATL,"Atlanta, GA",Afternoon,-1,0,Low <5min,FAY,"Fayetteville, NC",-3,Low <5min,74,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/30/2023,1,Endeavor Air,N923XJ,ATL,"Atlanta, GA",Afternoon,-5,0,Low <5min,FAY,"Fayetteville, NC",-7,Low <5min,74,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/31/2023,2,Endeavor Air,N314PQ,ATL,"Atlanta, GA",Afternoon,36,1,Medium >15min,FAY,"Fayetteville, NC",24,Medium >15min,64,Short Haul >1500Mi,0,0,0,0,24,CANADAIR REGIONAL JET,CRJ,10
+1/9/2023,1,Endeavor Air,N181GJ,FAY,"Fayetteville, NC",Afternoon,16,1,Medium >15min,ATL,"Atlanta, GA",-5,Low <5min,75,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/10/2023,2,Endeavor Air,N937XJ,FAY,"Fayetteville, NC",Afternoon,-6,0,Low <5min,ATL,"Atlanta, GA",-26,Low <5min,76,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/11/2023,3,Endeavor Air,N604LR,FAY,"Fayetteville, NC",Afternoon,-3,0,Low <5min,ATL,"Atlanta, GA",-22,Low <5min,77,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/12/2023,4,Endeavor Air,N371CA,FAY,"Fayetteville, NC",Afternoon,4,1,Low <5min,ATL,"Atlanta, GA",88,Hight >60min,180,Short Haul >1500Mi,0,0,88,0,0,CANADAIR REGIONAL JET,CRJ,21
+1/13/2023,5,Endeavor Air,N324PQ,FAY,"Fayetteville, NC",Afternoon,1,1,Low <5min,ATL,"Atlanta, GA",-13,Low <5min,82,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/14/2023,6,Endeavor Air,N316PQ,FAY,"Fayetteville, NC",Afternoon,0,0,Low <5min,ATL,"Atlanta, GA",-15,Low <5min,81,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/15/2023,7,Endeavor Air,N197PQ,FAY,"Fayetteville, NC",Afternoon,-5,0,Low <5min,ATL,"Atlanta, GA",-23,Low <5min,78,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/16/2023,1,Endeavor Air,N907XJ,FAY,"Fayetteville, NC",Afternoon,-3,0,Low <5min,ATL,"Atlanta, GA",-21,Low <5min,78,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/17/2023,2,Endeavor Air,N186PQ,FAY,"Fayetteville, NC",Afternoon,-4,0,Low <5min,ATL,"Atlanta, GA",-1,Low <5min,99,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/18/2023,3,Endeavor Air,N601LR,FAY,"Fayetteville, NC",Afternoon,-5,0,Low <5min,ATL,"Atlanta, GA",-12,Low <5min,89,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/19/2023,4,Endeavor Air,N135EV,FAY,"Fayetteville, NC",Afternoon,-8,0,Low <5min,ATL,"Atlanta, GA",-19,Low <5min,85,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/20/2023,5,Endeavor Air,N292PQ,FAY,"Fayetteville, NC",Afternoon,28,1,Medium >15min,ATL,"Atlanta, GA",15,Low <5min,83,Short Haul >1500Mi,15,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/21/2023,6,Endeavor Air,N279PQ,FAY,"Fayetteville, NC",Afternoon,-4,0,Low <5min,ATL,"Atlanta, GA",-26,Low <5min,74,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/22/2023,7,Endeavor Air,N601LR,FAY,"Fayetteville, NC",Afternoon,0,0,Low <5min,ATL,"Atlanta, GA",-6,Low <5min,90,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/23/2023,1,Endeavor Air,N606LR,FAY,"Fayetteville, NC",Afternoon,6,1,Low <5min,ATL,"Atlanta, GA",-11,Low <5min,79,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/24/2023,2,Endeavor Air,N295PQ,FAY,"Fayetteville, NC",Afternoon,-5,0,Low <5min,ATL,"Atlanta, GA",-20,Low <5min,81,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/25/2023,3,Endeavor Air,N313PQ,FAY,"Fayetteville, NC",Afternoon,-1,0,Low <5min,ATL,"Atlanta, GA",-3,Low <5min,94,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/26/2023,4,Endeavor Air,N146PQ,FAY,"Fayetteville, NC",Afternoon,-5,0,Low <5min,ATL,"Atlanta, GA",-3,Low <5min,98,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/27/2023,5,Endeavor Air,N923XJ,FAY,"Fayetteville, NC",Afternoon,-4,0,Low <5min,ATL,"Atlanta, GA",-7,Low <5min,93,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/28/2023,6,Endeavor Air,N923XJ,FAY,"Fayetteville, NC",Afternoon,-11,0,Low <5min,ATL,"Atlanta, GA",-26,Low <5min,81,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/29/2023,7,Endeavor Air,N337PQ,FAY,"Fayetteville, NC",Afternoon,-4,0,Low <5min,ATL,"Atlanta, GA",17,Medium >15min,117,Short Haul >1500Mi,0,0,17,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/30/2023,1,Endeavor Air,N923XJ,FAY,"Fayetteville, NC",Afternoon,-5,0,Low <5min,ATL,"Atlanta, GA",3,Low <5min,104,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/31/2023,2,Endeavor Air,N314PQ,FAY,"Fayetteville, NC",Afternoon,22,1,Medium >15min,ATL,"Atlanta, GA",12,Low <5min,86,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/8/2023,7,Endeavor Air,N136EV,JFK,"New York, NY",Evening,-6,0,Low <5min,ITH,"Ithaca/Cortland, NY",-4,Low <5min,71,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/9/2023,1,Endeavor Air,N166PQ,JFK,"New York, NY",Evening,-8,0,Low <5min,ITH,"Ithaca/Cortland, NY",-5,Low <5min,72,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/10/2023,2,Endeavor Air,N314PQ,JFK,"New York, NY",Evening,-10,0,Low <5min,ITH,"Ithaca/Cortland, NY",-1,Low <5min,78,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/11/2023,3,Endeavor Air,N601LR,JFK,"New York, NY",Evening,-5,0,Low <5min,ITH,"Ithaca/Cortland, NY",14,Low <5min,88,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/12/2023,4,Endeavor Air,N905XJ,JFK,"New York, NY",Evening,86,1,Hight >60min,ITH,"Ithaca/Cortland, NY",149,Hight >60min,132,Short Haul >1500Mi,0,0,63,0,86,CANADAIR REGIONAL JET,CRJ,17
+1/13/2023,5,Endeavor Air,N602LR,JFK,"New York, NY",Evening,42,1,Medium >15min,ITH,"Ithaca/Cortland, NY",52,Medium >15min,79,Short Haul >1500Mi,0,0,10,0,42,CANADAIR REGIONAL JET,CRJ,16
+1/14/2023,6,Endeavor Air,N304PQ,JFK,"New York, NY",Evening,21,1,Medium >15min,ITH,"Ithaca/Cortland, NY",11,Low <5min,59,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/15/2023,7,Endeavor Air,N301PQ,JFK,"New York, NY",Evening,110,1,Hight >60min,ITH,"Ithaca/Cortland, NY",132,Hight >60min,91,Short Haul >1500Mi,57,0,22,0,53,CANADAIR REGIONAL JET,CRJ,11
+1/16/2023,1,Endeavor Air,N305PQ,JFK,"New York, NY",Evening,-6,0,Low <5min,ITH,"Ithaca/Cortland, NY",14,Low <5min,89,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/17/2023,2,Endeavor Air,N272PQ,JFK,"New York, NY",Evening,-9,0,Low <5min,ITH,"Ithaca/Cortland, NY",-7,Low <5min,71,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/18/2023,3,Endeavor Air,N197PQ,JFK,"New York, NY",Evening,-4,0,Low <5min,ITH,"Ithaca/Cortland, NY",8,Low <5min,81,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/19/2023,4,Endeavor Air,N605LR,JFK,"New York, NY",Evening,39,1,Medium >15min,ITH,"Ithaca/Cortland, NY",71,Hight >60min,101,Short Haul >1500Mi,16,0,32,0,23,CANADAIR REGIONAL JET,CRJ,16
+1/20/2023,5,Endeavor Air,N330PQ,JFK,"New York, NY",Evening,56,1,Medium >15min,ITH,"Ithaca/Cortland, NY",51,Medium >15min,64,Short Haul >1500Mi,0,0,0,0,51,CANADAIR REGIONAL JET,CRJ,10
+1/21/2023,6,Endeavor Air,N691CA,JFK,"New York, NY",Evening,26,1,Medium >15min,ITH,"Ithaca/Cortland, NY",19,Medium >15min,62,Short Haul >1500Mi,10,0,0,0,9,CANADAIR REGIONAL JET,CRJ,17
+1/22/2023,7,Endeavor Air,N538CA,JFK,"New York, NY",Evening,108,1,Hight >60min,ITH,"Ithaca/Cortland, NY",109,Hight >60min,70,Short Haul >1500Mi,0,0,65,0,44,CANADAIR REGIONAL JET,CRJ,16
+1/23/2023,1,Endeavor Air,N678CA,JFK,"New York, NY",Evening,-5,0,Low <5min,ITH,"Ithaca/Cortland, NY",-3,Low <5min,71,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/24/2023,2,Endeavor Air,N920XJ,JFK,"New York, NY",Evening,-9,0,Low <5min,ITH,"Ithaca/Cortland, NY",-4,Low <5min,74,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/26/2023,4,Endeavor Air,N341PQ,JFK,"New York, NY",Evening,16,1,Medium >15min,ITH,"Ithaca/Cortland, NY",31,Medium >15min,84,Short Haul >1500Mi,0,0,15,0,16,CANADAIR REGIONAL JET,CRJ,10
+1/27/2023,5,Endeavor Air,N296PQ,JFK,"New York, NY",Evening,-8,0,Low <5min,ITH,"Ithaca/Cortland, NY",-3,Low <5min,74,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/28/2023,6,Endeavor Air,N133EV,JFK,"New York, NY",Evening,-4,0,Low <5min,ITH,"Ithaca/Cortland, NY",-8,Low <5min,65,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/29/2023,7,Endeavor Air,N176PQ,JFK,"New York, NY",Evening,-11,0,Low <5min,ITH,"Ithaca/Cortland, NY",-2,Low <5min,78,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/30/2023,1,Endeavor Air,N301PQ,JFK,"New York, NY",Evening,-7,0,Low <5min,ITH,"Ithaca/Cortland, NY",6,Low <5min,82,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/31/2023,2,Endeavor Air,N606LR,JFK,"New York, NY",Evening,5,1,Low <5min,ITH,"Ithaca/Cortland, NY",6,Low <5min,70,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/1/2023,7,Endeavor Air,N197PQ,ORF,"Norfolk, VA",Night,6,1,Low <5min,DTW,"Detroit, MI",-7,Low <5min,112,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/2/2023,1,Endeavor Air,N303PQ,ORF,"Norfolk, VA",Night,-4,0,Low <5min,DTW,"Detroit, MI",-7,Low <5min,122,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/3/2023,2,Endeavor Air,N183GJ,ORF,"Norfolk, VA",Night,5,1,Low <5min,DTW,"Detroit, MI",-7,Low <5min,113,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/4/2023,3,Endeavor Air,N136EV,ORF,"Norfolk, VA",Night,-2,0,Low <5min,DTW,"Detroit, MI",-27,Low <5min,100,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/5/2023,4,Endeavor Air,N295PQ,ORF,"Norfolk, VA",Night,-4,0,Low <5min,DTW,"Detroit, MI",-33,Low <5min,96,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/6/2023,5,Endeavor Air,N137EV,ORF,"Norfolk, VA",Night,-5,0,Low <5min,DTW,"Detroit, MI",-16,Low <5min,114,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/7/2023,6,Endeavor Air,N337PQ,ORF,"Norfolk, VA",Night,-4,0,Low <5min,DTW,"Detroit, MI",-7,Low <5min,122,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/8/2023,7,Endeavor Air,N197PQ,ORF,"Norfolk, VA",Night,-1,0,Low <5min,DTW,"Detroit, MI",-1,Low <5min,125,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/2/2023,1,Endeavor Air,N906XJ,MSP,"Minneapolis, MN",Morning,1,1,Low <5min,PIT,"Pittsburgh, PA",-1,Low <5min,128,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/4/2023,3,Endeavor Air,N138EV,MSP,"Minneapolis, MN",Morning,118,1,Hight >60min,PIT,"Pittsburgh, PA",246,Hight >60min,258,Short Haul >1500Mi,0,96,128,0,22,CANADAIR REGIONAL JET,CRJ,15
+1/5/2023,4,Endeavor Air,N330PQ,MSP,"Minneapolis, MN",Morning,2,1,Low <5min,PIT,"Pittsburgh, PA",-11,Low <5min,117,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/6/2023,5,Endeavor Air,N302PQ,MSP,"Minneapolis, MN",Morning,2,1,Low <5min,PIT,"Pittsburgh, PA",22,Medium >15min,150,Short Haul >1500Mi,0,0,22,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/7/2023,6,Endeavor Air,N925XJ,MSP,"Minneapolis, MN",Morning,-4,0,Low <5min,PIT,"Pittsburgh, PA",-14,Low <5min,120,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/8/2023,7,Endeavor Air,N936XJ,MSP,"Minneapolis, MN",Morning,0,0,Low <5min,PIT,"Pittsburgh, PA",-6,Low <5min,124,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/2/2023,1,Endeavor Air,N906XJ,PIT,"Pittsburgh, PA",Afternoon,-5,0,Low <5min,MSP,"Minneapolis, MN",6,Low <5min,161,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/4/2023,3,Endeavor Air,N337PQ,PIT,"Pittsburgh, PA",Afternoon,10,1,Low <5min,MSP,"Minneapolis, MN",-19,Low <5min,121,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/5/2023,4,Endeavor Air,N330PQ,PIT,"Pittsburgh, PA",Afternoon,-5,0,Low <5min,MSP,"Minneapolis, MN",-38,Low <5min,117,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/6/2023,5,Endeavor Air,N324PQ,PIT,"Pittsburgh, PA",Afternoon,-6,0,Low <5min,MSP,"Minneapolis, MN",-4,Low <5min,152,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/7/2023,6,Endeavor Air,N136EV,PIT,"Pittsburgh, PA",Afternoon,-10,0,Low <5min,MSP,"Minneapolis, MN",-31,Low <5min,129,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/8/2023,7,Endeavor Air,N936XJ,PIT,"Pittsburgh, PA",Afternoon,-5,0,Low <5min,MSP,"Minneapolis, MN",-34,Low <5min,121,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/9/2023,1,Endeavor Air,N228PQ,BWI,"Baltimore, MD",Afternoon,-2,0,Low <5min,JFK,"New York, NY",11,Low <5min,116,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/10/2023,2,Endeavor Air,N305PQ,BWI,"Baltimore, MD",Afternoon,-2,0,Low <5min,JFK,"New York, NY",-35,Low <5min,70,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/12/2023,4,Endeavor Air,N301PQ,BWI,"Baltimore, MD",Afternoon,108,1,Hight >60min,JFK,"New York, NY",69,Hight >60min,64,Short Haul >1500Mi,0,65,0,0,4,CANADAIR REGIONAL JET,CRJ,11
+1/13/2023,5,Endeavor Air,N331PQ,BWI,"Baltimore, MD",Afternoon,20,1,Medium >15min,JFK,"New York, NY",-1,Low <5min,82,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/14/2023,6,Endeavor Air,N228PQ,BWI,"Baltimore, MD",Afternoon,-8,0,Low <5min,JFK,"New York, NY",-14,Low <5min,97,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/15/2023,7,Endeavor Air,N272PQ,BWI,"Baltimore, MD",Afternoon,-2,0,Low <5min,JFK,"New York, NY",41,Medium >15min,146,Short Haul >1500Mi,0,0,41,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/16/2023,1,Endeavor Air,N335PQ,BWI,"Baltimore, MD",Afternoon,-3,0,Low <5min,JFK,"New York, NY",-36,Low <5min,70,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/17/2023,2,Endeavor Air,N330PQ,BWI,"Baltimore, MD",Afternoon,13,1,Low <5min,JFK,"New York, NY",13,Low <5min,103,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/18/2023,3,Endeavor Air,N913XJ,BWI,"Baltimore, MD",Afternoon,-5,0,Low <5min,JFK,"New York, NY",-33,Low <5min,75,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/19/2023,4,Endeavor Air,N232PQ,BWI,"Baltimore, MD",Afternoon,0,0,Low <5min,JFK,"New York, NY",-14,Low <5min,89,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/20/2023,5,Endeavor Air,N600LR,BWI,"Baltimore, MD",Afternoon,80,1,Hight >60min,JFK,"New York, NY",109,Hight >60min,132,Short Haul >1500Mi,0,0,29,0,80,CANADAIR REGIONAL JET,CRJ,17
+1/21/2023,6,Endeavor Air,N195PQ,BWI,"Baltimore, MD",Afternoon,-4,0,Low <5min,JFK,"New York, NY",-24,Low <5min,83,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/22/2023,7,Endeavor Air,N181PQ,BWI,"Baltimore, MD",Afternoon,10,1,Low <5min,JFK,"New York, NY",4,Low <5min,97,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/23/2023,1,Endeavor Air,N341PQ,BWI,"Baltimore, MD",Afternoon,-5,0,Low <5min,JFK,"New York, NY",-10,Low <5min,98,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/24/2023,2,Endeavor Air,N906XJ,BWI,"Baltimore, MD",Afternoon,-4,0,Low <5min,JFK,"New York, NY",-21,Low <5min,86,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/26/2023,4,Endeavor Air,N186PQ,BWI,"Baltimore, MD",Afternoon,-4,0,Low <5min,JFK,"New York, NY",-23,Low <5min,84,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/27/2023,5,Endeavor Air,N186PQ,BWI,"Baltimore, MD",Afternoon,19,1,Medium >15min,JFK,"New York, NY",5,Low <5min,89,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/28/2023,6,Endeavor Air,N314PQ,BWI,"Baltimore, MD",Afternoon,-5,0,Low <5min,JFK,"New York, NY",-36,Low <5min,72,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/29/2023,7,Endeavor Air,N279PQ,BWI,"Baltimore, MD",Afternoon,21,1,Medium >15min,JFK,"New York, NY",-20,Low <5min,62,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/30/2023,1,Endeavor Air,N931XJ,BWI,"Baltimore, MD",Afternoon,-5,0,Low <5min,JFK,"New York, NY",-41,Low <5min,67,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,16
+1/31/2023,2,Endeavor Air,N908XJ,BWI,"Baltimore, MD",Afternoon,17,1,Medium >15min,JFK,"New York, NY",-21,Low <5min,65,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,17
+1/9/2023,1,Endeavor Air,N228PQ,JFK,"New York, NY",Afternoon,-4,0,Low <5min,BWI,"Baltimore, MD",-26,Low <5min,60,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/10/2023,2,Endeavor Air,N305PQ,JFK,"New York, NY",Afternoon,-1,0,Low <5min,BWI,"Baltimore, MD",-21,Low <5min,62,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/12/2023,4,Endeavor Air,N301PQ,JFK,"New York, NY",Afternoon,10,1,Low <5min,BWI,"Baltimore, MD",6,Low <5min,78,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/13/2023,5,Endeavor Air,N331PQ,JFK,"New York, NY",Afternoon,20,1,Medium >15min,BWI,"Baltimore, MD",21,Medium >15min,83,Short Haul >1500Mi,2,0,1,0,18,CANADAIR REGIONAL JET,CRJ,10
+1/14/2023,6,Endeavor Air,N228PQ,JFK,"New York, NY",Afternoon,-6,0,Low <5min,BWI,"Baltimore, MD",-26,Low <5min,62,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,15
+1/15/2023,7,Endeavor Air,N272PQ,JFK,"New York, NY",Afternoon,-1,0,Low <5min,BWI,"Baltimore, MD",-17,Low <5min,66,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,11
+1/16/2023,1,Endeavor Air,N335PQ,JFK,"New York, NY",Afternoon,-4,0,Low <5min,BWI,"Baltimore, MD",-4,Low <5min,82,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
+1/17/2023,2,Endeavor Air,N330PQ,JFK,"New York, NY",Afternoon,0,0,Low <5min,BWI,"Baltimore, MD",10,Low <5min,92,Short Haul >1500Mi,0,0,0,0,0,CANADAIR REGIONAL JET,CRJ,10
