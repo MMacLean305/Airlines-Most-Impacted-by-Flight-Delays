@@ -66,8 +66,6 @@ int main(){
 
         istringstream strstream(raw_command);
 
-
-        string command = "";
         strstream >> command;
         vector<std::string> arguments;
         string argument;
@@ -121,7 +119,7 @@ int main(){
                     total_num += 1;
                 }
             }
-            float per_delayed =(num_delayed / total_num) * 100;
+            float per_delayed =((float)num_delayed / (float)total_num) * 100;
             
             cout << airline << ": " << endl;
             cout << "Total number of flights: " << total_num << endl;
@@ -204,7 +202,7 @@ int main(){
         }
         //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_dates"){
-            unordered_map<int, int> freq;
+            unordered_map<string, int> freq;
 
             for (Flight flight : quickSortedData){
                 if(flight.total_delay() > 0){
@@ -213,7 +211,7 @@ int main(){
             }
 
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
-            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_days"){
@@ -226,12 +224,12 @@ int main(){
             }
 
             vector<pair<int, int>> sorted_freq(freq.begin(), freq.end());
-            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<int>);
 
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_airlines"){
-            unordered_map<int, int> freq;
+            unordered_map<string, int> freq;
 
             for (Flight flight : quickSortedData){
                 if(flight.total_delay() > 0){
@@ -240,7 +238,7 @@ int main(){
             }
 
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
-            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
 
         }
         else if(command == "/show10"){
