@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include "flight.h"
 #include "fileio.h"
