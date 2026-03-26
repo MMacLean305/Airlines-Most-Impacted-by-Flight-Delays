@@ -211,11 +211,11 @@ int main(){
             }
 
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
-            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_days"){
-            unordered_map<integral_constant, int> freq;
+            unordered_map<int, int> freq;
 
             for (Flight flight : quickSortedData){
                 if(flight.total_delay() > 0){
@@ -224,7 +224,7 @@ int main(){
             }
 
             vector<pair<int, int>> sorted_freq(freq.begin(), freq.end());
-            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<int>);
 
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
@@ -238,7 +238,7 @@ int main(){
             }
 
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
-            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay());
+            sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
 
         }
         else if(command == "/show10"){

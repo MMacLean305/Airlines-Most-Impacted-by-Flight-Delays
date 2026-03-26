@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <utility>
 
 
 class Flight{
@@ -108,6 +109,6 @@ class Flight{
 //https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
 
 template<typename T>
-bool compareDelay(pair(T, int) a, pair(T, int) b){
+bool compareDelay(const std::pair<T, int>& a, const std::pair<T, int>& b){
     return a.second > b.second;
 };
