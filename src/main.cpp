@@ -79,9 +79,9 @@ int main(){
 
 
         if(command == "/h"){
-            cout << "|HELP| List of functions " << endl;
-            cout << '\t' << "/h : List functions" << endl;
-            cout << '\t' << "/compare_sort : Reprints the sort alogrithm comparison information" << endl;
+                    cout << "|HELP| List of functions " << endl;
+                                cout << '\t' << "/h : List functions" << endl;
+                                        cout << '\t' << "/compare_sort : Reprints the sort alogrithm comparison information" << endl;
             cout << '\t' << "/numdelays_airline (airline) : Prints the number of delayed flights from a given airline" <<endl;
             cout << '\t' << "/numdelays_airport (departure airport) (arrival airport) : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
             cout << '\t' << "/numdelays_day (day of week) : Shows the number of delayed flights for a given day of week" << endl;
