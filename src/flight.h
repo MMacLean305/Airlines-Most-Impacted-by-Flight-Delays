@@ -108,4 +108,4 @@ class Flight{
 template<typename T>
 bool compareDelay(pair(T, int) a, pair(T, int) b){
     return a.second > b.second;
-}
+};
