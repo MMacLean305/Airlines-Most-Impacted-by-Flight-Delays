@@ -8,3 +8,5 @@ add_executable(Airlines
     src/quicksort.h
     src/heapsort.h
 )
+
+configure_file(US_Flights_2023.csv US_Flights_2023.csv COPYONLY)
