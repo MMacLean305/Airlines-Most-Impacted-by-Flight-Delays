@@ -178,7 +178,12 @@ void Flight::print_all_data(){
     cout << "Work in progress";
 }
 void Flight::print_data_clean(){
-    cout << "Work in progress";
+    cout << "Departure: " << this->departure_airport << endl;
+    cout << "Arrival: " << this->arrival_airport << endl;
+    cout << "Date: " << this->flight_date << endl;
+    cout << "Airline: " << this->airline << endl;
+    cout << "Total: Delay: " << this->total_delay() << endl;
+
 }
 bool Flight::any_delay(){
     if(this->dep_delay_tag == true || this->arr_delay_tag == true){
