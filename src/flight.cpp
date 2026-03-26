@@ -44,7 +44,7 @@ Flight::Flight(
     this->model = model;
     this->aircraft_age = stoi(aircraft_age);
     
-    if(dep_delay_tag[0] == '1'){
+    if(!dep_delay_tag.empty() && dep_delay_tag[0] == '1'){
         this->dep_delay_tag = true;
     }else{
         this->dep_delay_tag = false;
@@ -79,7 +79,7 @@ Flight::Flight(
     }else{
         this->delay_nas = false;
     }
-
+    
     if(delay_security[0] == '1'){
         this->delay_security = true;
     }else{

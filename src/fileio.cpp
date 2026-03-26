@@ -5,6 +5,10 @@ using namespace std;
 
 vector<Flight> scrape_data(const std::string& filename){
     ifstream file(filename);
+    if (!file.is_open()) {
+        cout << "Failed to open file\n";
+        return {};
+    }
     vector<Flight> flights {};
     string line;
     getline(file, line);
@@ -31,7 +35,7 @@ vector<Flight> scrape_data(const std::string& filename){
         string delay_nas;
         string delay_security;
         string delay_last_aircraft;
-        string manufacturer; 
+        string manufacturer;
         string model;
         string aircraft_age;
 
@@ -59,10 +63,10 @@ vector<Flight> scrape_data(const std::string& filename){
         getline(raw, manufacturer, ',');
         getline(raw, model, ',');
         getline(raw, aircraft_age, ',');
-        
+
         Flight curr_flight = Flight(
-            flight_date, 
-            day_of_week, 
+            flight_date,
+            day_of_week,
             airline,
             tail_number,
             dep_airport,
