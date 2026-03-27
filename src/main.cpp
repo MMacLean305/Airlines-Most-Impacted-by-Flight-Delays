@@ -76,6 +76,12 @@ int main(){
     cout << '\t' << "Execution time: " << quick_execution << endl;
     cout << '\t' << "Number of swaps: " << quick_num_swaps << endl;
 
+    vector<Flight> reversedQuickSort = quickSortedData;
+    vector<Flight> reversedHeapSort = heapSortedData;
+
+    reverse(reversedQuickSort.begin(),reversedQuickSort.end());
+    reverse(reversedHeapSort.begin(), reversedHeapSort.end());
+
 
     //Console loop
     string raw_command;
@@ -313,8 +319,8 @@ int main(){
             cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 10 && i < qcSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                quickSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedQuickSort[i].print_data_clean();
                 cout << endl;
             }
 
@@ -322,8 +328,8 @@ int main(){
             cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 10 && i < hpSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                heapSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedHeapSort[i].print_data_clean();
                 cout << endl;
             }
             cout << endl;
@@ -332,8 +338,8 @@ int main(){
             cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 50 && i < qcSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                quickSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedQuickSort[i].print_data_clean();
                 cout << endl;
             }
 
@@ -341,8 +347,8 @@ int main(){
             cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 50 && i < hpSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                heapSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedHeapSort[i].print_data_clean();
                 cout << endl;
             }
             cout << endl;
@@ -351,8 +357,8 @@ int main(){
             cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 100 && i < qcSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                quickSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedQuickSort[i].print_data_clean();
                 cout << endl;
             }
 
@@ -360,8 +366,8 @@ int main(){
             cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 100 && i < hpSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                heapSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedHeapSort[i].print_data_clean();
                 cout << endl;
             }
             cout << endl;
@@ -370,16 +376,16 @@ int main(){
             cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < qcSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                quickSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedQuickSort[i].print_data_clean();
                 cout << endl;
             }
             cout << endl;
             cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < hpSize; i++){
-                cout << "Flight " << i << ": " << endl;
-                heapSortedData[i].print_data_clean();
+                cout << "Flight " << i+1 << ": " << endl;
+                reversedHeapSort[i].print_data_clean();
                 cout << endl;
             }
             cout << endl;
@@ -403,13 +409,13 @@ int main(){
             cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < num_to_print; i++){
-                quickSortedData[i].print_data_clean();
+                reversedQuickSort[i].print_data_clean();
             }
             cout << endl;
             cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < num_to_print; i++){
-                heapSortedData[i].print_data_clean();
+                reversedHeapSort[i].print_data_clean();
             }
             cout << endl;
         }
