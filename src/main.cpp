@@ -11,10 +11,7 @@ using namespace std;
 
 /*
 To do list:
--CMake
 -quicksort
--heapsort
--finish console functions
 -debug
 */
 
@@ -29,8 +26,6 @@ int main(){
 
     vector<Flight> unsorted_flights_heap = scrape_data("US_flights_2023.csv");
 
-    cout << "hi" << endl;
-
     //Call the heap sort and quick sort
 
     double heap_execution = 0.0; //temp value
@@ -39,11 +34,9 @@ int main(){
     int quick_num_swaps = 0; //temp value
 
     heapSort(unsorted_flights_heap, heap_num_swaps, unsorted_flights_heap.size());
-    cout << "hi" << endl;
     quickSort(unsorted_flights_quick, 0, unsorted_flights_quick.size() - 1, quick_num_swaps);
 
     vector<Flight> heapSortedData = unsorted_flights_heap;
-    cout << "hi" << endl;
     vector<Flight> quickSortedData = unsorted_flights_quick;
 
     //constant values
@@ -308,39 +301,36 @@ int main(){
         else if(command == "/show10"){
             cout << "Quick sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 10; i++){
-                cout << "Flight " << i << ": " << endl;
             for(int i = 0; i < 10 && i < qcSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
+
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 10; i++){
-                cout << "Flight " << i << ": " << endl;
             for(int i = 0; i < 10 && i < hpSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
                 cout << endl;
-
             }
             cout << endl;
         }
         else if(command == "/show50"){
             cout << "Quick sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 50; i++){
-                cout << "Flight " << i << ": " << endl;
             for(int i = 0; i < 50 && i < qcSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
+
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 50; i++){
-                cout << "Flight " << i << ": " << endl;
             for(int i = 0; i < 50 && i < hpSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -349,18 +339,17 @@ int main(){
         else if(command == "/show100"){
             cout << "Quick sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 100; i++){
-                cout << "Flight " << i << ": " << endl;
             for(int i = 0; i < 100 && i < qcSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
+
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 100; i++){
-                cout << "Flight " << i << ": " << endl;
             for(int i = 0; i < 100 && i < hpSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -370,6 +359,7 @@ int main(){
             cout << "Quick sort: " << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < qcSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -377,6 +367,7 @@ int main(){
             cout << "Heap sort: " << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < hpSize; i++){
+                cout << "Flight " << i << ": " << endl;
                 heapSortedData[i].print_data_clean();
                 cout << endl;
             }
