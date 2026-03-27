@@ -16,6 +16,8 @@ If you'd like to run this code on the full 6 million rows, the data set can be s
 
 Utilize the US_flights_2023.csv
 
+You must replace the provided CSV with the full dataset if you wish to utilize it. Just drag the CSV file into the directory and delete the old one.
+
 **Command Guide:**
 
         /h : List functions
