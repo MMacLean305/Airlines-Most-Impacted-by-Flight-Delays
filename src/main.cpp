@@ -6,28 +6,14 @@
 #include <vector>
 #include <sstream>
 #include <unordered_map>
+
 #include <algorithm>
+#include <chrono>
 using namespace std;
-
-/*
-To do list:
--quicksort
--debug
-*/
-
-
-
-
-
+using namespace std::chrono;
 
 int main(){
 
-    
-    //Loading screen
-    // cout << "Loading flight data"
-    
-
-    
 
     //File io
     vector<Flight> unsorted_flights_quick = scrape_data("US_flights_2023.csv");
@@ -44,15 +30,27 @@ int main(){
     double quick_execution = 0.0; //temp value
     int quick_num_swaps = 0; //temp value
 
+
+    //https://www.geeksforgeeks.org/cpp/measure-execution-time-function-cpp/ Chrono Implementation
+    auto heapStart = high_resolution_clock::now();
     heapSort(unsorted_flights_heap, heap_num_swaps, unsorted_flights_heap.size());
+    auto heapStop = high_resolution_clock::now();
+    auto quickStart = high_resolution_clock::now();
     quickSort(unsorted_flights_quick, 0, unsorted_flights_quick.size() - 1, quick_num_swaps);
+    auto quickStop = high_resolution_clock::now();
 
     vector<Flight> heapSortedData = unsorted_flights_heap;
     vector<Flight> quickSortedData = unsorted_flights_quick;
 
+    auto quickDuration = duration_cast<milliseconds>(quickStop-quickStart);
+    auto heapDuration = duration_cast<milliseconds>(heapStop-heapStart);
+
     //constant values
      int qcSize = quickSortedData.size();
      int hpSize = heapSortedData.size();
+
+     heap_execution = heapDuration.count();
+     quick_execution = quickDuration.count();
 
      //Day maping
      unordered_map<int, string> day_map = {
@@ -69,11 +67,11 @@ int main(){
     //Print out info on sort time and num of swaps
 
     cout << "Heap Sort:" << endl;
-    cout << '\t' << "Execution time: " << heap_execution << endl;
+    cout << '\t' << "Execution time (ms): " << heap_execution << endl;
     cout << '\t' << "Number of swaps: " << heap_num_swaps << endl;
 
     cout << "Quick Sort:" << endl;
-    cout << '\t' << "Execution time: " << quick_execution << endl;
+    cout << '\t' << "Execution time (ms): " << quick_execution << endl;
     cout << '\t' << "Number of swaps: " << quick_num_swaps << endl;
 
     vector<Flight> reversedQuickSort = quickSortedData;
