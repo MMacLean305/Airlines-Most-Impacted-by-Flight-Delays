@@ -9,10 +9,13 @@
 
 #include <algorithm>
 #include <chrono>
+
 using namespace std;
 using namespace std::chrono;
 
 int main(){
+    //https://ansi.tools/
+    cout << "\033[1;33mLoading files...\033[0m" << endl;
 
 
     //File io
@@ -21,10 +24,10 @@ int main(){
     vector<Flight> unsorted_flights_heap = scrape_data("US_flights_2023.csv");
 
     //https://ansi.tools/
-    //cout << "\033[2K\r";
+    cout << "\033[1;32mFiles loaded\033[0m" << endl << endl;
+    cout << "\033[1;33mSorting flights...\033[0m" << endl;
 
     //Call the heap sort and quick sort
-
     double heap_execution = 0.0; //temp value
     int heap_num_swaps = 0; //temp value
     double quick_execution = 0.0; //temp value
@@ -35,9 +38,14 @@ int main(){
     auto heapStart = high_resolution_clock::now();
     heapSort(unsorted_flights_heap, heap_num_swaps, unsorted_flights_heap.size());
     auto heapStop = high_resolution_clock::now();
+
+    cout << "\033[1;32mHeap sort complete\033[0m" << endl;
+
     auto quickStart = high_resolution_clock::now();
     quickSort(unsorted_flights_quick, 0, unsorted_flights_quick.size() - 1, quick_num_swaps);
     auto quickStop = high_resolution_clock::now();
+
+    cout << "\033[1;32mQuick sort complete\033[0m" << endl << endl << endl;
 
     vector<Flight> heapSortedData = unsorted_flights_heap;
     vector<Flight> quickSortedData = unsorted_flights_quick;
@@ -66,11 +74,11 @@ int main(){
 
     //Print out info on sort time and num of swaps
 
-    cout << "Heap Sort:" << endl;
+    cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;;
     cout << '\t' << "Execution time (ms): " << heap_execution << endl;
     cout << '\t' << "Number of swaps: " << heap_num_swaps << endl;
 
-    cout << "Quick Sort:" << endl;
+    cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
     cout << '\t' << "Execution time (ms): " << quick_execution << endl;
     cout << '\t' << "Number of swaps: " << quick_num_swaps << endl;
 
@@ -80,10 +88,10 @@ int main(){
     reverse(reversedQuickSort.begin(),reversedQuickSort.end());
     reverse(reversedHeapSort.begin(), reversedHeapSort.end());
 
-
     //Console loop
     string raw_command;
     while(true){
+        cout << endl;
         string command = "";
         int num_args = 0;
         
@@ -102,36 +110,37 @@ int main(){
 
 
         if(command == "/h"){
-            cout << "|HELP| List of functions " << endl;
-            cout << '\t' << "/h : List functions" << endl;
-            cout << '\t' << "/compare_sort : Reprints the sort algorithm comparison information" << endl;
-            cout << '\t' << "/numdelays_airline (airline) : Prints the number of delayed flights from a given airline" <<endl;
-            cout << '\t' << "/numdelays_airport (departure airport) (arrival airport) : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
-            cout << '\t' << "/numdelays_day (day of week) : Shows the number of delayed flights for a given day of week" << endl;
-            cout << '\t' << "/bw_dates : Prints the 5 dates with most/least delays" << endl;
-            cout << '\t' << "/bw_days : Prints the 5 days with most/least delays" << endl;
-            cout << '\t' << "/bw_airlines : Prints the 5 airlines with most/least delays" << endl;
-            cout << '\t' << "/show10 : Prints the first 10 datapoints of each sorted list" <<endl;
-            cout << '\t' << "/show50 : Prints the first 50 datapoints of each sorted list" <<endl;
-            cout << '\t' << "/show100 : Prints the first 100 datapoints of each sorted list" <<endl;
-            cout << '\t' << "/show500 : Prints the first 500 datapoints of each sorted list" <<endl;
-            cout << '\t' << "/show# (number) : Prints the number of datapoints of each sorted list" << endl;
-            cout << '\t' << "/quit : Quits" << endl;
+            cout << endl;
+            cout << "\033[1;36m|HELP| List of functions\033[0m" << endl;
+            cout << "\t\033[32m/h\033[0m : List functions" << endl;
+            cout << "\t\033[32m/compare_sort\033[0m : Reprints the sort algorithm comparison information" << endl;
+            cout << "\t\033[32m/numdelays_airline (airline)\033[0m : Prints the number of delayed flights from a given airline" << endl;
+            cout << "\t\033[32m/numdelays_airport (departure airport) (arrival airport)\033[0m : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
+            cout << "\t\033[32m/numdelays_day (day of week)\033[0m : Shows the number of delayed flights for a given day of week" << endl;
+            cout << "\t\033[32m/bw_dates\033[0m : Prints the 5 dates with most/least delays" << endl;
+            cout << "\t\033[32m/bw_days\033[0m : Prints the 5 days with most/least delays" << endl;
+            cout << "\t\033[32m/bw_airlines\033[0m : Prints the 5 airlines with most/least delays" << endl;
+            cout << "\t\033[32m/show10\033[0m : Prints the first 10 datapoints of each sorted list" << endl;
+            cout << "\t\033[32m/show50\033[0m : Prints the first 50 datapoints of each sorted list" << endl;
+            cout << "\t\033[32m/show100\033[0m : Prints the first 100 datapoints of each sorted list" << endl;
+            cout << "\t\033[32m/show500\033[0m : Prints the first 500 datapoints of each sorted list" << endl;
+            cout << "\t\033[32m/show# (number)\033[0m : Prints the number of datapoints of each sorted list" << endl;
+            cout << "\t\033[32m/quit\033[0m : Quits" << endl;
             //ADD MORE COMMANDS HERE
         }
         else if(command == "/compare_sort"){
-            cout << "Heap Sort:" << endl;
+            cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;
             cout << '\t' << "Execution time: " << heap_execution << endl;
             cout << '\t' << "Number of swaps: " << heap_num_swaps << endl;
 
-            cout << "Quick Sort:" << endl;
+            cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << '\t' << "Execution time: " << quick_execution << endl;
             cout << '\t' << "Number of swaps: " << quick_num_swaps << endl;
             cout << endl;
         }
         else if(command == "/numdelays_airline"){
             if(arguments.empty()){
-            cout << "|ERROR| No airline specified" << endl;
+            cout << "\033[31m|ERROR|\033[0m No airline specified" << endl;
             continue;
             }
             string airline = arguments[0];
@@ -157,7 +166,7 @@ int main(){
         else if(command == "/numdelays_airport"){
 
             if (arguments.size() < 2){
-                cout << "|ERROR| Not enough arguments" << endl;
+                cout << "\033[31m|ERROR|\033[0m Not enough arguments" << endl;
                 continue;
             }
 
@@ -179,7 +188,7 @@ int main(){
         else if(command == "/numdelays_day"){
 
             if (arguments.empty()){
-                cout << "|ERROR| No day specified" << endl;
+                cout << "\033[31m|ERROR|\033[0m No day specified" << endl;
                 continue;
             }
 
@@ -207,7 +216,7 @@ int main(){
                 day = 7;
             }
             else{
-                cout << "|ERROR| Invalid day specified" << endl;
+                cout << "\033[31m|ERROR|\033[0m Invalid day specified" << endl;
                 cout << "Please enter Monday, Tuesday, etc" <<endl; 
                 continue;
             }
@@ -245,13 +254,13 @@ int main(){
 
             cout << "----- Top 5 dates with most delays -----" << endl << endl;
             for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
-                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+                cout << '\t' << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
             cout << endl;
 
             cout << "----- Top 5 dates with least delays -----" << endl << endl;
             for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
-                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+                cout << '\t' << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
             cout << endl;
             cout << endl;
@@ -272,14 +281,14 @@ int main(){
 
             cout << "----- Top 5 days with most delays -----" << endl << endl;
             for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
-                cout << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
+                cout << '\t' << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
             }
 
             cout << endl;
 
             cout << "----- Top 5 days with least delays -----" << endl << endl;
             for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
-                cout << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
+                cout << '\t' << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
             }
             cout << endl;
             cout << endl;
@@ -301,12 +310,12 @@ int main(){
 
             cout << "----- Top 5 airlines with most delays -----" << endl << endl;
             for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
-                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+                cout << '\t' << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
             cout << endl;
             cout << "----- Top 5 airlines with least delays -----" << endl << endl;
             for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
-                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+                cout << '\t' << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
             cout << endl;
 
@@ -314,7 +323,7 @@ int main(){
 
         }
         else if(command == "/show10"){
-            cout << "----- Quick sort -----" << endl;
+            cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 10 && i < qcSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -323,7 +332,7 @@ int main(){
             }
 
             cout << endl;
-            cout << "----- Heap sort -----" << endl;
+            cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 10 && i < hpSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -333,7 +342,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show50"){
-            cout << "----- Quick sort -----" << endl;
+            cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 50 && i < qcSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -342,7 +351,7 @@ int main(){
             }
 
             cout << endl;
-            cout << "----- Heap sort -----" << endl;
+            cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 50 && i < hpSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -352,7 +361,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show100"){
-            cout << "----- Quick sort -----" << endl;
+            cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 100 && i < qcSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -361,7 +370,7 @@ int main(){
             }
 
             cout << endl;
-            cout << "----- Heap sort -----" << endl;
+            cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 100 && i < hpSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -371,7 +380,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show500"){
-            cout << "----- Quick sort -----" << endl;
+            cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < qcSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -379,7 +388,7 @@ int main(){
                 cout << endl;
             }
             cout << endl;
-            cout << "----- Heap sort -----" << endl;
+            cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < hpSize; i++){
                 cout << "Flight " << i+1 << ": " << endl;
@@ -391,26 +400,26 @@ int main(){
         else if(command == "/show#"){
             //Exception handler
             if(arguments.empty()){
-                cout << "|ERROR| No number specified" << endl;
+                cout << "\033[31m|ERROR|\033[0m No number specified" << endl;
                 continue;
             }
             if(!stoi(arguments[0])){
-                cout << "|ERROR| No number specified" << endl;
+                cout << "\033[31m|ERROR|\033[0m No number specified" << endl;
                     continue;
             }
             int num_to_print = stoi(arguments[0]);
             if(num_to_print > qcSize){
-                cout << "|ERROR| Number is larger than dataset" << endl;
+                cout << "\033[31m|ERROR|\033[0m Number is larger than dataset" << endl;
                 continue;
             }
 
-            cout << "----- Quick sort -----" << endl;
+            cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < num_to_print; i++){
                 reversedQuickSort[i].print_data_clean();
             }
             cout << endl;
-            cout << "----- Heap sort -----" << endl;
+            cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < num_to_print; i++){
                 reversedHeapSort[i].print_data_clean();
@@ -421,7 +430,8 @@ int main(){
             break;
         }
         else{
-            cout << "Command not recognized" << endl;
+            cout << endl;
+            cout << "\033[31m|ERROR|\033[0m Command not recognized" << endl;
         }
     }
     return 0;
