@@ -14,6 +14,31 @@ using namespace std;
 using namespace std::chrono;
 
 int main(){
+    //https://www.asciiart.eu/vehicles/airplanes
+    cout << R"(                      ___
+                      \\ \
+                       \\ `\
+    ___                 \\  \
+   |    \                \\  `\
+   |_____\                \    \
+   |______\                \    `\
+   |       \                \     \
+   |      __\__---------------------------------._.
+ __|---~~~__o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_[][\__
+|___                         /~      )                \__
+    ~~~---..._______________/      ,/_________________/
+                           /      /
+                          /     ,/
+                         /     /
+                        /    ,/
+                       /    /
+                      //  ,/
+                     //  /
+                    // ,/
+                   //_/
+)" << endl;
+
+
     //https://ansi.tools/
     cout << "\033[1;33mLoading files...\033[0m" << endl;
 
@@ -26,6 +51,8 @@ int main(){
     //https://ansi.tools/
     cout << "\033[1;32mFiles loaded\033[0m" << endl << endl;
     cout << "\033[1;33mSorting flights...\033[0m" << endl;
+
+
 
     //Call the heap sort and quick sort
     double heap_execution = 0.0; //temp value
@@ -74,6 +101,16 @@ int main(){
 
     //Print out info on sort time and num of swaps
 
+    cout << "\033[1;36m";
+    cout << "========================================" << endl;;
+    cout << "        Airline Delay Analyzer" << endl;
+    cout << "========================================" <<endl;
+    cout << "\033[0m";
+
+    cout << "          Created by: " << endl;
+    cout << "          Matthew MacLean" << endl;
+    cout << "          Ashwin Guda" << endl << endl;
+
     cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;;
     cout << '\t' << "Execution time (ms): " << heap_execution << endl;
     cout << '\t' << "Number of swaps: " << heap_num_swaps << endl;
@@ -95,7 +132,7 @@ int main(){
         string command = "";
         int num_args = 0;
         
-        cout << "Please enter a command (/h for help):" << endl;
+        cout << "\033[1;36mPlease enter a command (/h for help):\033[0m" << endl;
         getline(cin, raw_command);
 
         istringstream strstream(raw_command);
@@ -129,6 +166,7 @@ int main(){
             //ADD MORE COMMANDS HERE
         }
         else if(command == "/compare_sort"){
+            cout << endl;
             cout << "\033[1;36m----- Heap Sort -----\033[0m" << endl;
             cout << '\t' << "Execution time: " << heap_execution << endl;
             cout << '\t' << "Number of swaps: " << heap_num_swaps << endl;
@@ -139,6 +177,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/numdelays_airline"){
+            cout << endl;
             if(arguments.empty()){
             cout << "\033[31m|ERROR|\033[0m No airline specified" << endl;
             continue;
@@ -164,7 +203,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/numdelays_airport"){
-
+            cout << endl;
             if (arguments.size() < 2){
                 cout << "\033[31m|ERROR|\033[0m Not enough arguments" << endl;
                 continue;
@@ -186,7 +225,7 @@ int main(){
 
         }
         else if(command == "/numdelays_day"){
-
+            cout << endl;
             if (arguments.empty()){
                 cout << "\033[31m|ERROR|\033[0m No day specified" << endl;
                 continue;
@@ -241,6 +280,7 @@ int main(){
         }
         //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_dates"){
+            cout << endl;
             unordered_map<string, int> freq;
 
             for (Flight flight : quickSortedData){
@@ -268,6 +308,7 @@ int main(){
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_days"){
+            cout << endl;
             unordered_map<int, int> freq;
 
             for (Flight flight : quickSortedData){
@@ -297,6 +338,7 @@ int main(){
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_airlines"){
+            cout << endl;
             unordered_map<string, int> freq;
 
             for (Flight flight : quickSortedData){
@@ -323,6 +365,7 @@ int main(){
 
         }
         else if(command == "/show10"){
+            cout << endl;
             cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 10 && i < qcSize; i++){
@@ -342,6 +385,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show50"){
+            cout << endl;
             cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 50 && i < qcSize; i++){
@@ -361,6 +405,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show100"){
+            cout << endl;
             cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 100 && i < qcSize; i++){
@@ -380,6 +425,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show500"){
+            cout << endl;
             cout << "\033[1;36m----- Quick sort -----\033[0m" << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < qcSize; i++){
@@ -398,6 +444,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show#"){
+            cout << endl;
             //Exception handler
             if(arguments.empty()){
                 cout << "\033[31m|ERROR|\033[0m No number specified" << endl;
@@ -427,6 +474,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/quit"){
+            cout << endl;
             break;
         }
         else{
