@@ -21,10 +21,21 @@ To do list:
 
 
 int main(){
+
+    
+    //Loading screen
+    // cout << "Loading flight data"
+    
+
+    
+
     //File io
     vector<Flight> unsorted_flights_quick = scrape_data("US_flights_2023.csv");
 
     vector<Flight> unsorted_flights_heap = scrape_data("US_flights_2023.csv");
+
+    //https://ansi.tools/
+    //cout << "\033[2K\r";
 
     //Call the heap sort and quick sort
 
@@ -228,13 +239,13 @@ int main(){
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
             sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
 
-            cout << "Top 5 dates with most delays: " << endl << endl;
+            cout << "----- Top 5 dates with most delays -----" << endl << endl;
             for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
                 cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
             cout << endl;
 
-            cout << "Top 5 dates with least delays: " << endl << endl;
+            cout << "----- Top 5 dates with least delays -----" << endl << endl;
             for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
                 cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
@@ -255,14 +266,14 @@ int main(){
             vector<pair<int, int>> sorted_freq(freq.begin(), freq.end());
             sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<int>);
 
-            cout << "Top 5 days with most delays: " << endl << endl;
+            cout << "----- Top 5 days with most delays -----" << endl << endl;
             for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
                 cout << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
             }
 
             cout << endl;
 
-            cout << "Top 5 days with least delays: " << endl << endl;
+            cout << "----- Top 5 days with least delays -----" << endl << endl;
             for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
                 cout << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
             }
@@ -284,12 +295,12 @@ int main(){
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
             sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
 
-            cout << "Top 5 airlines with most delays: " << endl << endl;
+            cout << "----- Top 5 airlines with most delays -----" << endl << endl;
             for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
                 cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
             cout << endl;
-            cout << "Top 5 airlines with least delays: " << endl << endl;
+            cout << "----- Top 5 airlines with least delays -----" << endl << endl;
             for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
                 cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
             }
@@ -299,7 +310,7 @@ int main(){
 
         }
         else if(command == "/show10"){
-            cout << "Quick sort: " << endl;
+            cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 10 && i < qcSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -308,7 +319,7 @@ int main(){
             }
 
             cout << endl;
-            cout << "Heap sort: " << endl;
+            cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 10 && i < hpSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -318,7 +329,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show50"){
-            cout << "Quick sort: " << endl;
+            cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 50 && i < qcSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -327,7 +338,7 @@ int main(){
             }
 
             cout << endl;
-            cout << "Heap sort: " << endl;
+            cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 50 && i < hpSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -337,7 +348,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show100"){
-            cout << "Quick sort: " << endl;
+            cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 100 && i < qcSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -346,7 +357,7 @@ int main(){
             }
 
             cout << endl;
-            cout << "Heap sort: " << endl;
+            cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 100 && i < hpSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -356,7 +367,7 @@ int main(){
             cout << endl;
         }
         else if(command == "/show500"){
-            cout << "Quick sort: " << endl;
+            cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < qcSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -364,7 +375,7 @@ int main(){
                 cout << endl;
             }
             cout << endl;
-            cout << "Heap sort: " << endl;
+            cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < 500 && i < hpSize; i++){
                 cout << "Flight " << i << ": " << endl;
@@ -389,13 +400,13 @@ int main(){
                 continue;
             }
 
-            cout << "Quick sort: " << endl;
+            cout << "----- Quick sort -----" << endl;
             cout << endl;
             for(int i = 0; i < num_to_print; i++){
                 quickSortedData[i].print_data_clean();
             }
             cout << endl;
-            cout << "Heap sort: " << endl;
+            cout << "----- Heap sort -----" << endl;
             cout << endl;
             for(int i = 0; i < num_to_print; i++){
                 heapSortedData[i].print_data_clean();
