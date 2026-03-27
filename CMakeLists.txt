@@ -9,4 +9,5 @@ add_executable(Airlines
     src/heapsort.h
 )
 
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--stack,8388608")
 configure_file(US_Flights_2023.csv US_Flights_2023.csv COPYONLY)
