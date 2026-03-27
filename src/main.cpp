@@ -6,6 +6,7 @@
 #include <vector>
 #include <sstream>
 #include <unordered_map>
+#include <algorithm>
 using namespace std;
 
 /*
@@ -45,6 +46,21 @@ int main(){
     cout << "hi" << endl;
     vector<Flight> quickSortedData = unsorted_flights_quick;
 
+    //constant values
+     int qcSize = quickSortedData.size();
+     int hpSize = heapSortedData.size();
+
+     //Day maping
+     unordered_map<int, string> day_map = {
+        {1, "Monday"},
+        {2, "Tuesday"},
+        {3, "Wednesday"},
+        {4, "Thursday"},
+        {5, "Friday"},
+        {6, "Saturday"},
+        {7, "Sunday"}
+    };
+
 
     //Print out info on sort time and num of swaps
 
@@ -78,9 +94,9 @@ int main(){
 
 
         if(command == "/h"){
-                    cout << "|HELP| List of functions " << endl;
-                                cout << '\t' << "/h : List functions" << endl;
-                                        cout << '\t' << "/compare_sort : Reprints the sort alogrithm comparison information" << endl;
+            cout << "|HELP| List of functions " << endl;
+            cout << '\t' << "/h : List functions" << endl;
+            cout << '\t' << "/compare_sort : Reprints the sort algorithm comparison information" << endl;
             cout << '\t' << "/numdelays_airline (airline) : Prints the number of delayed flights from a given airline" <<endl;
             cout << '\t' << "/numdelays_airport (departure airport) (arrival airport) : Prints the number of delayed flights from a departure airport to arrival airport" << endl;
             cout << '\t' << "/numdelays_day (day of week) : Shows the number of delayed flights for a given day of week" << endl;
@@ -103,6 +119,7 @@ int main(){
             cout << "Quick Sort:" << endl;
             cout << '\t' << "Execution time: " << quick_execution << endl;
             cout << '\t' << "Number of swaps: " << quick_num_swaps << endl;
+            cout << endl;
         }
         else if(command == "/numdelays_airline"){
             if(arguments.empty()){
@@ -146,8 +163,9 @@ int main(){
                     count++;
                 }
             }
-            cout << "Departure airport: " << departure <<  "to Arrival airport: " << arrival << endl;
+            cout << "Departure airport: " << departure <<  " to Arrival airport: " << arrival << endl;
             cout << "Number of delayed flights: " << count << endl;
+            cout << endl;
 
         }
         else if(command == "/numdelays_day"){
@@ -182,6 +200,7 @@ int main(){
             }
             else{
                 cout << "|ERROR| Invalid day specified" << endl;
+                cout << "Please enter Monday, Tuesday, etc" <<endl; 
                 continue;
             }
 
@@ -195,10 +214,12 @@ int main(){
 
             for (auto iter = freq.begin(); iter != freq.end(); iter++){
                 if (iter->first == day){
+                    cout << "Day: " << day_map[iter->first] << endl;
                     cout << "Number of delayed flights: " << iter->second << endl;
                     cout << endl;
                 }
             }
+            cout << endl;
 
         }
         //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
@@ -213,6 +234,20 @@ int main(){
 
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
             sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
+
+            cout << "Top 5 dates with most delays: " << endl << endl;
+            for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
+                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+            }
+            cout << endl;
+
+            cout << "Top 5 dates with least delays: " << endl << endl;
+            for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
+                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+            }
+            cout << endl;
+            cout << endl;
+
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
         else if(command == "/bw_days"){
@@ -226,6 +261,21 @@ int main(){
 
             vector<pair<int, int>> sorted_freq(freq.begin(), freq.end());
             sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<int>);
+
+            cout << "Top 5 days with most delays: " << endl << endl;
+            for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
+                cout << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
+            }
+
+            cout << endl;
+
+            cout << "Top 5 days with least delays: " << endl << endl;
+            for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
+                cout << day_map[sorted_freq[i].first] << ": " << sorted_freq[i].second << endl;
+            }
+            cout << endl;
+            cout << endl;
+            
 
         }
                //sorting map by value from https://www.geeksforgeeks.org/cpp/sorting-a-map-by-value-in-c-stl/
@@ -241,12 +291,26 @@ int main(){
             vector<pair<string, int>> sorted_freq(freq.begin(), freq.end());
             sort(sorted_freq.begin(), sorted_freq.end(), compareDelay<string>);
 
+            cout << "Top 5 airlines with most delays: " << endl << endl;
+            for(int i = 0; i < 5 && i < sorted_freq.size(); i++){
+                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+            }
+            cout << endl;
+            cout << "Top 5 airlines with least delays: " << endl << endl;
+            for(int i = sorted_freq.size() - 1; i >= 0 && i >= (int)sorted_freq.size() - 5; i--){
+                cout << sorted_freq[i].first << ": " << sorted_freq[i].second << endl;
+            }
+            cout << endl;
+
+            cout << endl;
+
         }
         else if(command == "/show10"){
             cout << "Quick sort: " << endl;
             cout << endl;
             for(int i = 0; i < 10; i++){
                 cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 10 && i < qcSize; i++){
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -255,6 +319,7 @@ int main(){
             cout << endl;
             for(int i = 0; i < 10; i++){
                 cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 10 && i < hpSize; i++){
                 heapSortedData[i].print_data_clean();
                 cout << endl;
 
@@ -266,6 +331,7 @@ int main(){
             cout << endl;
             for(int i = 0; i < 50; i++){
                 cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 50 && i < qcSize; i++){
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -274,6 +340,7 @@ int main(){
             cout << endl;
             for(int i = 0; i < 50; i++){
                 cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 50 && i < hpSize; i++){
                 heapSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -284,6 +351,7 @@ int main(){
             cout << endl;
             for(int i = 0; i < 100; i++){
                 cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 100 && i < qcSize; i++){
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -292,6 +360,7 @@ int main(){
             cout << endl;
             for(int i = 0; i < 100; i++){
                 cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 100 && i < hpSize; i++){
                 heapSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -300,16 +369,14 @@ int main(){
         else if(command == "/show500"){
             cout << "Quick sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 500; i++){
-                cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 500 && i < qcSize; i++){
                 quickSortedData[i].print_data_clean();
                 cout << endl;
             }
             cout << endl;
             cout << "Heap sort: " << endl;
             cout << endl;
-            for(int i = 0; i < 500; i++){
-                cout << "Flight " << i << ": " << endl;
+            for(int i = 0; i < 500 && i < hpSize; i++){
                 heapSortedData[i].print_data_clean();
                 cout << endl;
             }
@@ -326,6 +393,10 @@ int main(){
                     continue;
             }
             int num_to_print = stoi(arguments[0]);
+            if(num_to_print > qcSize){
+                cout << "|ERROR| Number is larger than dataset" << endl;
+                continue;
+            }
 
             cout << "Quick sort: " << endl;
             cout << endl;
