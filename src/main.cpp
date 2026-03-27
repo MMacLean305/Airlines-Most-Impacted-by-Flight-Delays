@@ -182,7 +182,13 @@ int main(){
             cout << "\033[31m|ERROR|\033[0m No airline specified" << endl;
             continue;
             }
-            string airline = arguments[0];
+            string airline;
+            for (size_t i = 0; i < arguments.size(); i++) {
+                airline += arguments[i];
+                if (i < arguments.size() - 1)
+                    airline += " ";
+            }
+
             int total_num = 0;
             int num_delayed = 0;
             for(int i = 0; i < quickSortedData.size(); i++){
