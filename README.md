@@ -3,6 +3,7 @@
 **Airline Delay Analyzer
 Created by: Matthew MacLean and Ashwin Guda**
 
+
 **Usage Guide:**
 
 -Clone Repository into IDE of choice, preferrably CLion.
@@ -10,6 +11,10 @@ Created by: Matthew MacLean and Ashwin Guda**
 -Make sure at least 8mb are allocated to the stack (The CMake should do this already, but the Windows default of 1mb will cause overflow issues)
 
 -If a IDE is used, ensure the "Run in external console" run configuration is enabled
+
+If you'd like to run this code on the full 6 million rows, the data set can be sourced from here https://www.kaggle.com/datasets/bordanova/2023-us-civil-flights-delay-meteo-and-aircraft?resource=download&select=US_flights_2023.csv. 
+
+Utilize the US_flights_2023.csv
 
 **Command Guide:**
 
